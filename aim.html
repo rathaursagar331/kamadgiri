@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    .nav-item {
+      align-items: end;
+      color: rgb(255, 153, 51);
+    }
+
+    .menu:hover {
+      color: white;
+      border-radius: 10%;
+      background-color: rgb(255, 153, 51);
+
+
+    }
+
+    .link {
+      text-decoration: none;
+      color: white;
+      transition: all ease-in-out 0.4s;
+
+    }
+
+    .link:hover {
+      color: #d1350e;
+
+    }
+
+    .form-control {
+      margin-top: 25px;
+    }
+
+    .main_headding {
+      transition: 0.7s;
+    }
+
+    .main_headding:hover {
+      background-color: rgb(255, 153, 51);
+      color: white;
+      border-radius: 0% 0% 40% 40%;
+    }
+
+    .main_headding:hover #text1 {
+      color: white !important;
+    }
+
+    #text1 {
+
+      color: rgb(255, 153, 51);
+      font-weight: 800;
+    }
+
+    #text1:hover {
+      color: white;
+    }
+
+    .shadow-img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .shadow-img:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      transform: translateY(-5px);
+    }
+    @media (max-width:500px)
+    {
+     #dd
+    {
+     
+     margin-top: -80PX;
+    }  
+    #button1
+    {
+      display: none;
+      margin-top: -60px;
+    }
+    #button2
+    {
+      display: none;
+      margin-top: -60px;
+    }
+   
+    #logo
+    {
+    display: block;
+    }
+    #hea
+    {
+      display: none;
+    }
+    }
+    @media (min-width:500px) and (max-width:740px){
+      #dd
+      {
+        margin-top: -80px;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid m-0 p-0">
+    <!--Start Header-->
+    <div class="row m-0 p-0" style="background-color: rgb(255, 153, 51);; min-height: 60px; ">
+
+      <div class="col-lg-3 col-md-6 col-sm-12 text-end pt-2 fs-5"> <a style="text-decoration: none;" class="text-light "
+          href="mailto: Kamadgiritrust@gmail.com">
+          <i class="bi bi-envelope"></i> &nbsp; Kamadgiritrust@gmail.com</a>
+      </div>
+
+      <div class="col-lg-7 col-md-6 col-sm-12 fs-5 pt-2 text-center" style="color:white">
+
+        <span class="fs-2">जय श्री कामता नाथ जी भगवान </span>
+      </div>
+
+      <div class="col-lg col-md-6 col-sm-12 fs-3 text-light text-center justify-content-evenly">
+
+        <a href="https://www.facebook.com/profile.php?id=100082020253358" style="text-decoration: none; color: white;">
+          <i class="bi bi-facebook "></i> </a>
+        <a href="https://x.com/kamadgiritrust" target="_blank" style="text-decoration: none; color: white;"> <i
+            class="bi bi-twitter p-3"></i> </a>
+      </div>
+    </div>
+    <!--Header End-->
+
+    <!--srat navbar-->
+
+    <div class="row m-0 p-0 sticky-top bg-light " style="opacity: 0.9;">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+        <img src="img/nlogo.png" id="logo" alt="" height="100px">
+        <span class="fw-bold" id="hea" style="font-size: 15px;"> श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार ट्रस्ट श्री
+          चित्रकूट धाम </span>
+      </div>
+
+      <div class="col-lg-8 col-md-6 col-sm-12 fs-5" id="dd">
+        <!-- <img src="img/nlogo.png" id="logo1" alt="" height="100px"> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-end" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3" id="nav">
+                <li class="nav-item">
+                  <a class="nav-link menu active" aria-current="page" href="index.html">मुख्य
+                    पृष्ठ</a>
+                </li>
+
+                <li class="nav-item menu dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    हमारे बारे में
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item menu" href="bare_me.html">श्री कामदगिरि के बारे में</a></li>
+                    <li><a class="dropdown-item menu" href="parikrama.html">श्री कामदगिरि प्रदक्षिणा के बारे में</a>
+                    </li>
+                    <li>
+                    <li><a class="dropdown-item menu" href="about.html">श्री चित्रकूट धाम तीर्थ क्षेत्र के बारे में</a>
+                    </li>
+                    <li><a class="dropdown-item menu" href="rech.html">श्री चित्रकूट धाम पहुंचने का साधन</a></li>
+                    <li><a class="dropdown-item menu" href="event.html">वार्षिक अयोजनो का विवरण</a></li>
+                  </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    श्री कामदगिरि ट्रस्ट
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item menu" href="vision.html">ट्रस्ट के बारे मे </a></li>
+                    <li><a class="dropdown-item menu " href="vision.html">ट्रस्ट के सदस्य </a></li>
+
+                    <li><a class="dropdown-item menu" href="aim.html">ट्रस्ट का उद्देश्य </a></li>
+
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link menu active" href="mahant.html">महंत परम्परा</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    गैलरी
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item menu" href="gallery.html">फोटो गैलरी</a></li>
+                    <li><a class="dropdown-item menu" href="videoGallery.html">वीडियो गैलरी</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item "></li>
+                <a class="nav-link menu active" href="contect.html">संपर्क करे</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+      <div class="row p-0 m-0">
+        <div class="col-sm-12" style="height: 4px;background-color: rgb(255, 153, 51); width: 100%;"></div>
+      </div>
+    </div>
+    <!--end nabvar-->
+
+    <div class="row mb-5 m-0 p-0"
+      style="background-image: url(./img/banner.jpg);max-height: 250px; min-height: 250px;background-repeat: no-repeat; background-size:100% 100%; background-size: cover; background-position: center;">
+      <div class="col-sm-12 d-flex justify-content-center align-items-center fs-1"
+        style="background-color: black; opacity: 0.6; color: rgb(255, 153, 51); font-weight: 800;">
+        श्री कामदगिरी ट्रस्ट का उद्देश्य
+      </div>
+    </div>
+    <!-- 2 -->
+    <div class="row p-0 m-0  ">
+      <div class="col-sm-12">
+        <h1 id="text1" class=" main_headding py-2" style="text-align: center; ">ट्रस्ट के उद्देश्य</h1>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10" style="margin-top: 1%; text-align: center;">
+        <p>ट्रस्ट लोकहित को दृष्टिगत रखते हुए विभिन्न सेवा प्रकल्पों के माध्यम से अपनी विभिन्न गतिविधियां संचालित करता
+          है। जिनका विवरण निम्नवत है-</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- 4 -->
+
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-top: 2%; ">
+        <h2 id="text1" class=" main_headding py-2 text-center">औषधालय</h2>
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4; ">औषधालय के प्रेरक एवं संस्थापक महंत श्री
+          पुरूषोत्तम दास जी महाराज (डॉ साहब) थे। उन्होंने रोगियों के निःशुल्क उपचार के
+          लिए दिन-रविवार, दिनांक-16/04/1995 को श्री श्री 1008 श्री महंत प्रेम पुजारी दास स्मारक धर्मार्थ आयुर्वेदिक
+          औषधालय की स्थापना
+          की । जिसके माध्यम से तब से आजतक प्रतिदिन लगभग 50 से 60 रोगियों का निःशुल्क उपचार विभिन्न रोगों के लिए हो रहा
+          है। जिसमें एक
+          प्रमुख चिकित्सक एवं दो सहायक चिकित्सक सेवारत हैं।चित्रकूट के जंगलों में निर्गुंडी, हंसराज, हडज़ोड़, वन कोदरा,
+          सहसमुरीआ, ब्राह्मी, अजान, चिनवा, कोंहारी, ढिमरबेल, वन कपास जैसे कई औषधीय पेड़-पौधे पाए जाते हैं.
+          चित्रकूट के देवांगना जंगल में सफ़ेद मूसली, कंदमूल, सफ़ेद प्याज़, हल्दी, आमा हल्दी, काली मूसली जैसी कई
+          जड़ी-बूटियां पाई जाती हैं.
+          देवांगना जंगल में यारशागुंबा (जिसे कीड़ा-जड़ी भी कहा जाता है) नाम की एक बहुत महंगी जड़ी-बूटी पाई जाती है. यह
+          पहाड़ों की ऊंचाइयों पर पाई जाती है और बहुत मुश्किल से मिलती है.
+          चित्रकूट के आर्युवेद के डॉक्टरों के मुताबिक, तुलसी को “अतुलनीय”, “प्रकृति की मां औषधि”, और “जड़ी-बूटियों की
+          रानी” कहा जाता है.
+          चित्रकूट में भारतीय प्रधानमंत्री जन औषधि केंद्र भी है, जहां कम दामों में दवाइयां मिलती हैं</p>
+      </div>
+      <div class="col-sm-5 " style="margin-top: 2%;">
+        <img src="img/ausa.jpg" class="shadow-img p-1 mb-5 bg-body rounded"
+          style="border-radius: 15%; width: 100%; height: 100%;">
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- 5 -->
+    <!-- 6 -->
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-top: 3%;">
+        <img src="img/gau.jpg" class="shadow-img p-1 mb-5 bg-body rounded"
+          style="border-radius: 15%; width: 100%; height: 100%;">
+      </div>
+      <div class="col-sm-5" style="margin-top: 3%;">
+        <h2 id="text1" class=" main_headding py-2 text-center">गौशाला</h2>
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4; ">चित्रकूट की इस सद्गुरु गौशाला में तक़रीबन
+          1400 गौवंश हैं, जिसमें अधिकांशतः वह हैं जिनके मालिकों ने उनको छोड़ दिया है.
+          उनको यहाँ शरण देकर उनके पालन पोषण का काम किया जाता है. इतना ही नहीं यहाँ हर एक गौवंशों का डिजिटल आधार कार्ड
+          बनाया जाता है. जिसमे गायों के जबड़े का फोटो लेकर उनका सभी डाटा सॉफ्टवेयर में फीड किया जाता है. जिसके बाद यहाँ
+          एक
+          क्लिक में गायों के जबड़े को स्कैन करके उनका पूरा डाटा देखा जा सकता है, इस डिजिटल आधार कार्ड में गायों का नाम,
+          लम्बाई,
+          चौड़ाई, वज़न, पूर्व में कौन कौन सी बीमारियां और कौन कौन सा इलाज दिया गया इत्यादि पूरा डाटा मौजूद हैइस आधार कार्ड
+          के
+          बन जाने से गौवंशों के खोने का भी ख़तरा नहीं होता, ऐसे में गौवंशों को डिजिटल आधार कार्ड इस डिजिटल गौशाला को
+          हाईटेक गौशाला
+          बनाता है. इतना ही नहीं गंगा आरती की तर्ज़ और उसी निश्चित समय पर प्रतिदिन गौ आरती भी होती है जिसमे गौ प्रतिमा की
+          आरती के बाद
+          गौवंशो की आरती भी की जाती है। जिला मुख्यालय से 20 किलोमीटर दूर जानकीकुण्ड स्थित सदगुरु गौ सेवा केंद्र है. यहां
+          मौजूदा स्थिति में तक़रीबन
+          1400 गाय हैं, जिसमें लगभग 1100 गौवंशों का डिजिटल आधार कार्ड बना हुआ है.</p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- 7 -->
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-5" style="margin-top: 5%; "><br />
+        <h2 id="text1" class=" main_headding py-2 text-center">विद्यार्थियों को संरक्षण</h2><br />
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4;  ">ट्रस्ट के द्वारा आश्रम में औसतन 20
+          विद्यार्थियों को भोजन वस्त्र आवास एवं शैक्षणिक व्यय प्रदान करके उन्हें समुचित शिक्षा का अवसर प्रदान किया गया
+          है। छात्रों की संख्या विभिन्न वर्षों में उपर्युक्त संख्या से कम या अधिक होती रहती है। इसके अतिरिक्त विभिन्न
+          राष्ट्रीय पर्वों के अवसर पर शिक्षा के प्रति प्रोत्साहित करने के लिए छात्रों को पुरस्कार वितरण किये जाते हैं।
+          क्योंकि ट्रस्ट का मानना है कि शिक्षित एवं संस्कारित छात्र ही एक स्वस्थ समाज की स्थापना कर सकते हैं।</p>
+      </div>
+      <div class="col-sm-5" style="margin-top: 5%;">
+        <img src="img/stu.jpeg" class="shadow-img p-1 mb-5 bg-body rounded"
+          style="border-radius: 15%; height: 350px; width: 100%;">
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- 8 -->
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-12">
+        <h2 id="text1" class=" main_headding py-2 text-center">असहाय, निर्धन एवं दीन दुखियों की सेवा</h2><br />
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4; ">अखंड आश्रम का ट्रस्ट वर्ष 1944 में बना
+          था और भक्तों के दान से सभी संपत्तियां बनाई गई हैं। अखंड आश्रम का दावा शिवधाम आश्रम भी ट्रस्ट का हिस्सा है और
+          स्वामी अखंडानंद जी महाराज ने करीब सवा सौ नींव रखी थी।वर्तमान युग में समाज की एक बहुत बड़ी विडम्बना है कि जो लोग
+          इस समाज को एवं परिवार को मजबूती प्रदान करने के लिए अपना सम्पूर्ण जीवन न्यौछावर कर देते हैं। वृध्दावस्था में
+          शक्ति क्षीण होने के पश्चात उनको ही बोझ मान लिया जाता है। प्राय: ऐसे लोग दर -2 भटकने के लिए मजबूर हो जाते हैं।
+          उन्हें या तो किसी वृध्दाश्रम में आश्रय लेना पड़ता है या फिर किसी तीर्थ में जाकर जैसे तैसे अपना गुजारा करना पड़ता
+          है। ट्रस्ट ऐसे ही निराश्रित, दीन-हीन एवं लाचार व्यक्तियों को आश्रय उपलब्ध कराकर भोजन, वस्त्र एवं निःशुल्क
+          चिकित्सा आदि निरंतर प्रदान कराता है। ताकि वे भी एक सम्मान एवं स्वाभिमान पूर्ण जीवन व्यतीत कर सकें।</p>
+      </div>
+    </div>
+    <!-- just  -->
+
+    <!-- 8 -->
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-12" style="margin-top: 2%;">
+        <h4 id="text1" class=" main_headding py-2 text-center">विभिन्न कुम्भ मेलों में भूमि स्थापित करके संत सेवा, भगवत
+          एवं सत्संग आदि की व्यवस्था और विभिन्न सेवा प्रकल्पों का संरक्षण</h4>
+      </div>
+      <div class="row p-0 m-0 ">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" style="height: 5px; background-color: rgb(255,153,51);"></div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+    <!-- 9 -->
+    <div class="row p-0 m-0 mt-3" style="margin-top: 2%;">
+      <div class="col-sm-3 mt-1 ">
+        <img src="img/nashikmela.jpg" style="max-height:250px; min-height:250px; width: 100%;" class="shadow-img p-1  bg-body rounded">
+      </div>
+      <div class="col-sm-3 mt-1 ">
+        <img src="img/ujjainmela.jpg" style="max-height:250px; min-height:250px; width: 100%;" class="shadow-img p-1  bg-body rounded">
+      </div>
+      <div class="col-sm-3 mt-1">
+        <img src="img/kumbhmela1.jpg" style="max-height:250px; min-height:250px; width: 100%;" class="shadow-img p-1  bg-body rounded">
+      </div>
+      <div class="col-sm-3 mt-1">
+        <img src="img/harimela.jpg" style="max-height:250px; min-height:250px; width: 100%;" class="shadow-img p-1 bg-body rounded">
+      </div>
+    </div>
+    <!-- 10 -->
+    <div class="row p-0 m-0 py-1">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-12 " style="margin-top: 5%;">
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4; ">पौराणिक कथाओं परम्पराओं एवं मान्यताओं के
+          अनुसार सम्पूर्ण भारत वर्ष में चार स्थानों पर कुम्भ मेले का आयोजन
+          बारह वर्षों के अन्तराल में होता है।यह उत्सव चार पवित्र नदियों के किनारे चार तीर्थ
+          स्थानों के बीच घूमता है- हरिद्वार में गंगा नदी पर, उज्जैन में शिप्रा पर, नासिक में गोदावरी पर और प्रयाग
+          (आधुनिकप्रयागराज ) में गंगा, जमुना और पौराणिक सरस्वती के संगम पर।" कुम्भ में मात्र श्रृध्दालु तीर्थ यात्री ही
+          नहीं आते हैं बल्कि सनातन धर्म के विभिन्न सम्रदायों के आश्रम
+          धारी संतों ,महंतों , श्री महन्तों ,मण्डलेश्वरों ,आचार्य महामंडलेश्वरों ,सम्प्रदायाचार्यों एवं मनीषी
+          ,महापुरुषों के विशाल शिविर आने वाले श्रृध्दालु तीर्थ यात्रियों का स्वागत करते हैं
+          जिसमें नित्य गंगा स्नान, भजन-पूजन एवं सत्संग आदि की व्यवस्था होती है । देश के लगभग समस्त प्रमुख धार्मिक
+          संस्थान
+          अपने -2 शिविर स्थापित करके जनसेवा के सहभागी बनते हैं। ट्रस्ट की ओर से भी प्रत्येक वर्ष माघ मास में एक
+          विशाल शिविर की स्थापना करके दैनिक भजन-पूजन, विद्वान संतों के द्वारा सत्संग, दरिद्र नारायण की सेवा ,
+          अतिथि सेवा एवं अन्य प्रकार के सेवा प्रकल्प सम्पूर्ण मेला काल तक चलाये जाते हैं। </p>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <!-- 11 -->
+    <div class="row p-0 m-0 ">
+      <div class="col-sm-12 mt-4">
+        <h2 id="text1" class=" main_headding py-2 text-center">सनातन धर्म के मर्यादा के अनुसार विभिन्न पर्वों एवं
+          उत्सवों का आयोजन</h2>
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4;">भारतीय संस्कृति आनन्द, उल्लास एवं जीवंतता
+          की संस्कृति है। जिसमें अनेक पर्वों एवं उत्सवों को आयोजित करके प्राचीन परम्पराओं को संरक्षित ही नही किया जाता
+          है बल्कि जीवन को सरस, सरल एवं आनंदमय बनाने का प्रयास भी किया जाता है। ट्रस्ट की ओर से भारतीय संस्कृति एवं
+          धार्मिक परम्पराओं को सम्मानित करने के लिए अनेक पर्व एवं उत्सवों का समय -समय पर आयोजन किया जाता है। जिसका
+          विस्तृत विवरण वेबसाइट के वार्षिक आयोजनों का विवरण शीर्षक के अंतर्गत उपलब्ध है।</p>
+      </div>
+    </div>
+    <div class="row p-0 m-0">
+      <div class="col-sm-12 mt-2">
+        <h3 id="text1" class="main_headding py-2 text-center">कामदगिरि मंदिर में प्रसिद्ध त्यौहार</h3>
+        <ul style="letter-spacing: 2px; line-height: 1.4; text-align: justify;"><b>होली -</b> यह त्यौहार फाल्गुन
+          (फरवरी-मार्च) के महीने में मनाया जाता है। इस उत्सव के दौरान लोग रंगों के साथ जश्न मनाते हैं और मंदिर परिसर में
+          आनंद लेते हैं।</ul>
+        <ul style="letter-spacing: 2px; line-height: 1.4; text-align: justify;"><b>राम नवमी - </b>राम नवमी एक हिंदू
+          त्योहार है जो राम के जन्म का उत्सव मनाता है, जो हिंदू धर्म में सबसे लोकप्रिय देवताओं में से एक हैं, जिन्हें
+          विष्णु के सातवें अवतार के रूप में भी जाना जाता है।</ul>
+        <ul style="letter-spacing: 2px; line-height: 1.4; text-align: justify;"><b>दिवाली -</b> दिवाली रोशनी का त्यौहार
+          है, जिसे अन्य भारतीय धर्मों में भी विभिन्न रूपों में मनाया जाता है। यह आध्यात्मिक रूप से “अंधकार पर प्रकाश की
+          जीत, बुराई पर अच्छाई की जीत और अज्ञानता पर ज्ञान की जीत” का प्रतीक है।</ul>
+      </div>
+    </div>
+
+
+    <!-- 14 -->
+
+    <!-- 15 -->
+
+
+    <!--start footer-->
+    <div class="row footer-top p-0 m-0" style="min-height: 300px; background-color: rgb(51, 49, 47);">
+
+      <div class="col-lg-4 col-md-6 col-sm-12 text-light  p-5 "
+        style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">
+        ट्रस्ट के संस्थापक अध्यक्ष साकेतवासी श्री महंत श्री प्रेम पुजारी दास जी महाराज "सिंहस्थ भूषण" ने आश्रम व्यवस्था
+        को अधिक कुशल बनाने तथा भविष्य में उत्तराधिकार को लेकर किसी भी प्रकार के विवाद से बचने एवं आश्रम के संतों एवं
+        संपत्तियों के हित को ध्यान में रखते हुए सन 1987-88 में श्री कामदगिरि प्रदिक्षणा प्रमुख द्वार (उत्तर) ट्रस्ट श्री
+        चित्रकूट धाम के नाम से एक प्राइवेट ट्रस्ट का गठन किया।
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-6 text-light p-4">
+        <div class="fs-3" style="color: rgb(255, 153, 51);">
+          महत्वपूर्ण लिंक
+          <hr style="height: 12%; color: rgb(255, 153, 51); border-width: 5px; ">
+        </div>
+        <div class="row ">
+          <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.5; letter-spacing: 1px;">
+            <ul>
+              <li> <a href="index.html" class="link">मुख्य पृष्ठ</a></li>
+              <!-- <li> <a href="#"class="link">मीडिया</a></li> -->
+              <li> <a href="video" class="link">वीडियो गैलरी</a></li>
+              <li><a href="event.html" class="link">वार्षिक आयोजनों का विवरण</a> </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.6 ; letter-spacing: 1px;">
+            <ul>
+              <li> <a href="about.html" class="link">बारे में</a></li>
+              <li> <a href="gallery.html" class="link">फोटो गैलरी</a></li>
+              <li> <a href="contect.html" class="link">संपर्क करें</a></li>
+              <li> <a href="feedback.html" class="link">सुझाव</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 text-light p-4">
+        <div class=" fs-3" style="color: rgb(255, 153, 51);">
+          संपर्क करें
+          <b>
+            <hr style="height: 12%; color: rgb(255, 155, 55); border-width: 5px;">
+          </b>
+        </div>
+        <span class="col-lg-4">
+          <b> पता:</b><span style="line-height: 2; letter-spacing: 2.3px;"> श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार
+            (उत्तर) ट्रस्ट चित्रकूट धाम , कामतन चित्रकूट (मध्य प्रदेश)-485334 <br>
+            <b> फ़ोन:</b> <a href="tel:9752233696" class="link "> +91-9752233696 </a>,
+            <a href="tel:8168462108" class="link"> +91-8168462108 </a> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="tel: 9451030513" class="link"> +91-9451030513 </a> ,
+            <a href="tel: 9453666803" class="link"> +91-9453666803 </a> <br>
+            <b>ईमेल :</b> <a class="link" href="mailto: Kamadgiritrust@gmail.com"> Kamadgiritrust@gmail.com</a>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+      <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">&copy;2019 Kamadgiri Trust All Rights Reserved
+        &nbsp;&nbsp;&nbsp;
+
+      </div>
+
+    </div>
+
+    <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+      <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center"> Developed By
+        <a href="doploper.html" style="text-decoration: none; color: white;"> Knight Coder </a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!--end footer-->
+  </div>
+</body>
+
+</html>

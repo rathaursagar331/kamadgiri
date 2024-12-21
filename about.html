@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .nav-item {
+          align-items: end;
+          color: rgb(255, 153, 51);
+        }
+    
+        .menu:hover {
+          color: white;
+          border-radius: 10%;
+          background-color: rgb(255, 153, 51);
+    
+    
+        }
+        .link
+          {
+            text-decoration: none;
+            color: white;
+            transition: all ease-in-out 0.4s;
+    
+          }
+    
+          .link:hover
+          {
+            color: #d1350e;
+            
+          }
+
+          .form-control
+          {
+            margin-top: 25px;
+          }
+          .main_headding
+          {
+            transition: 0.7s;
+        }
+        .main_headding:hover
+        {
+            background-color: rgb(255, 153, 51);
+            color: white;
+            border-radius: 0% 0% 40% 40%;
+        }
+          .main_headding:hover #text1
+          {
+            color: white !important;
+        } 
+        #text1:hover{
+            color: white;
+        }
+        #text1{
+          color: rgb(255, 153, 51);
+          font-weight: 800;
+        }
+        .shadow-img
+        {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .shadow-img:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+        }
+        @media (max-width:500px)
+    {
+     #dd
+    {
+     
+     margin-top: -80PX;
+    }  
+    #button1
+    {
+      display: none;
+      margin-top: -60px;
+    }
+    #button2
+    {
+      display: none;
+      margin-top: -60px;
+    }
+   
+    #logo
+    {
+    display: block;
+    }
+    #hea
+    {
+      display: none;
+    }
+    }
+    @media (min-width:500px) and (max-width:740px){
+      #dd
+      {
+        margin-top: -80px;
+      }
+      
+    }
+      </style>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+       
+   <!--Start Header-->
+   <div class="row m-0 p-0" style="background-color: rgb(255, 153, 51);; min-height: 60px; ">
+
+    <div class="col-lg-3 col-md-6 col-sm-12 text-end pt-2 fs-5"> <a style="text-decoration: none;" class="text-light "
+        href="mailto: Kamadgiritrust@gmail.com">
+        <i class="bi bi-envelope"></i> &nbsp; Kamadgiritrust@gmail.com</a>
+    </div>
+
+    <div class="col-lg-7 col-md-6 col-sm-12 fs-5 pt-2 text-center" style="color:white">
+     
+      <span class="fs-2">जय श्री कामता नाथ जी भगवान </span>
+    </div>
+
+    <div class="col-lg col-md-6 col-sm-12 fs-3 text-light text-center justify-content-evenly">
+      
+    <a href="https://www.facebook.com/profile.php?id=100082020253358" style="text-decoration: none; color: white;"> <i class="bi bi-facebook "></i> </a> 
+      <a href="https://x.com/kamadgiritrust" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-twitter p-3"></i> </a>
+    </div>
+  </div>
+  <!--Header End-->
+
+  <!--srat navbar-->
+
+  <div class="row m-0 p-0 sticky-top bg-light " style="opacity: 0.9;">
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+      <img src="img/nlogo.png" id="logo" alt="" height="100px">
+   <span class="fw-bold" id="hea" style="font-size: 15px;">  श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार ट्रस्ट श्री चित्रकूट धाम </span> 
+    </div>
+
+    <div class="col-lg-8 col-md-6 col-sm-12 fs-5" id="dd">
+      <!-- <img src="img/nlogo.png" id="logo1" alt="" height="100px"> -->
+
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3" id="nav">
+              <li class="nav-item">
+                <a class="nav-link menu active" aria-current="page" href="index.html">मुख्य
+                  पृष्ठ</a>
+              </li>
+
+              <li class="nav-item menu dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  हमारे बारे में
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item menu" href="bare_me.html">श्री कामदगिरि के बारे में</a></li>
+                  <li><a class="dropdown-item menu" href="parikrama.html">श्री कामदगिरि प्रदक्षिणा के बारे में</a>
+                  </li>
+                  <li>
+                  <li><a class="dropdown-item menu" href="about.html">श्री चित्रकूट धाम तीर्थ क्षेत्र के बारे में</a>
+                  </li>
+                  <li><a class="dropdown-item menu" href="rech.html">श्री चित्रकूट धाम पहुंचने का साधन</a></li>
+                  <li><a class="dropdown-item menu" href="event.html">वार्षिक अयोजनो का विवरण</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  श्री कामदगिरि ट्रस्ट
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item menu" href="vision.html">ट्रस्ट के बारे मे </a></li>
+                  <li><a class="dropdown-item menu " href="vision.html">ट्रस्ट के सदस्य </a></li>
+
+                  <li><a class="dropdown-item menu" href="aim.html">ट्रस्ट का उद्देश्य </a></li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link menu active" href="mahant.html">महंत परम्परा</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  गैलरी
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item menu" href="gallery.html">फोटो गैलरी</a></li>
+                  <li><a class="dropdown-item menu" href="videoGallery.html">वीडियो गैलरी</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item "></li>
+              <a class="nav-link menu active" href="contect.html">संपर्क करे</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+    </div>
+    <div class="row p-0 m-0">
+        <div class="col-sm-12" style="height: 4px;background-color: rgb(255, 153, 51); width: 100%;"></div>
+      </div>
+  </div>
+  <!--end nabvar-->
+
+       
+
+   
+<!--start about-->
+<div class="row mb-5 m-0 p-0"
+      style="background-image: url(./img/banner.jpg);max-height: 250px; min-height: 250px;background-repeat: no-repeat; background-size:100% 100%; background-position: center;">
+      <div class="col-sm-12 d-flex justify-content-center align-items-center fs-1"
+        style="background-color: black; opacity: 0.6; color: rgb(255, 153, 51); font-weight: 800;">
+        श्री कामदगिरी के तीर्थ स्थल 
+      </div>
+    </div>
+<div class="row m-0 p-0">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 text-center">
+        <h1 id="text1"class="main_headding py-2 text-center fs-2 fw-bolder">श्री चित्रकूट धाम तीर्थ क्षेत्र के प्रमुख तीर्थ,मठ एवं मंदिर</h1>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+<div class="row m-0 p-0">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        त्रेता युग में भगवान श्री रामचंद्र जी के राज्याभिषेक के लिए श्री भरत लाल जी सपरिकर श्री चित्रकूट धाम पधारे थे। उस समय उन्होंने 5 दिनों में संपूर्ण चित्रकूट धाम के विभिन्न तीर्थों के दर्शन किए थे। तब से पंच दिवसीय श्री चित्रकूट धाम की यात्रा प्रचलित हुई। इस संदर्भ में श्री रामचरितमानस अयोध्याकांड का निम्नलिखित दोहा प्रमाण है<br>
+      <p class=" m-3 p-0 text-center fs-5 "> देखे   थल  तीरथ  सकल  भरत  पाँच  दिन   माझ। <br>
+     कहत सुनत हरि हर सुजसु गयउ दिवसु भइ साँझ।।<br></p>
+     <p class="m-3 p-0">श्री चित्रकूट धाम तीर्थ क्षेत्र के अंतर्गत श्री कामदगिरि परिक्रमा के तीर्थों एवं मंदिरों के अतिरिक्त अन्य तीर्थों को अध्ययन की सुविधा के लिए निम्नांकित पांच मंडलों में विभाजित किया जा सकता है<br>
+                1.रामघाट मंडल<br>
+                2.दक्षिणी मंडल<br>
+                3.पूर्वी मंडल<br>
+                4. पश्चिमोत्तर मंडल <br>
+                5.श्री चित्रकूट धाम के आंचलिक तीर्थ स्थल एवं मंदिर</p>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+
+<div class="row m-0 py-2">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <h2 id="text1"class="main_headding text-center fw-bold">1.रामघाट मंडल-</h2>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+
+ <div class="row m-0 p-0">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="row m-0 p-0">
+            <div class="col-sm-6">
+                <img src="img/ramghat.webp" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+            </div>
+            <div class="col-sm-6">
+                <h3 id="text1"class="main_headding text-center fw-bold">(अ) श्री रामघाट-</h3>
+                <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">रामघाट चित्रकूट शहर में पवित्र मंदाकिनी नदी के किनारे स्थित एक पौराणिक और ऐतिहासिक स्थल है। चित्रकूट एक पवित्र तीर्थ स्थल है और रामायण की पौराणिक घटनाओं से जुड़ा हुआ है। यह शहर विंध्य पर्वत श्रृंखला में बसा है और अपनी प्राकृतिक सुंदरता और धार्मिक महत्व के लिए प्रसिद्ध है |<br>
+                    <p>  चित्रकूट  के घाट  पर, भई संतन  की भीर।<br>
+                        तुलसीदास चंदन घिसे, तिलक देत रघुवीर।।</p>
+                    राम घाट मंदाकिनी नदी के किनारे स्थित है, जहां ऐसा माना जाता है कि भगवान राम ने, सीता और लक्ष्मण के साथ, रामायण काल ​​के दौरान अपने वनवास का एक हिस्सा बिताया था। यह घाट भगवान राम के भक्तों के लिए एक महत्वपूर्ण और पूजनीय स्थान है और पूरे देश से तीर्थयात्रियों और पर्यटकों को आकर्षित करता है।</p>
+            </div>
+           
+        </div>
+
+    </div>
+    <div class="col-sm-1"></div>
+    </div>
+
+ <div class="row m-0 p-0">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="row m-0 p-0">
+            <div class="col-sm-6">
+                <h3 id="text1"class="main_headding text-center  fw-bold">(ब)मत्तगजेंद्र शिव मंदिर-</h3>
+                <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">त्रेतायुग में चित्रकूट की पावन नगरी में प्रभू श्री राम के चरण पड़े थे, प्रभू ने यहां वनवास के दौरान अपनी भार्या माता सीता और भ्राता लक्ष्मण के साथ 14 वर्ष में से साढ़े 11 वर्ष बिताए थे.तबसे इस पूजनीय तीर्थ स्थान के कण-कण में श्री राम बसे हुए हैं.यहां मंदाकिनी नदी किनारे रामघाट पर मत्यगजेंद्र नाथ शिव जी का मंदिर है.जिन्हें चित्रकूट का क्षेत्रपाल कहा जाता है.इस मंदिर में 4 शिवलिंग है. जो पूरे उत्तर भारत में केवल यहीं हैं. यहां कई तीर्थ स्थान होने के चलते देश-विदेश से पर्यटक और भक्तों का आना लगा रहता है.सावन मास में भक्त मंदाकिनी नदी में स्नान करने के बाद मत्यगजेंद्र स्वामी के दर्शन करते हैं</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/nath.png" style="height: 300px;width: 100%;" class=" img-fluid shadow-img p-1 mb-2 m-2 p-0">        
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0" >
+                <div class="col-sm-6">
+                    <img src="img/raghav prag.jpg" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center">(स) श्री राघव प्रयाग घाट-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">जहां पर एक से अधिक नदियों का संगम होता है उस तीर्थ को प्रयाग कहते हैं। श्री चित्रकूट धाम में निर्मोही अखाड़ा के निकट मां मंदाकिनी मां पयस्विनी और गुप्त रूप से मां सरयू का पावन संगम होता है। जिसे श्री राघव प्रयाग घाट के नाम से जाना जाता है। तीर्थराज प्रयाग स्वयं पवित्र होने के लिए प्रत्येक 12 वर्ष के उपरांत काक वेश में यहां आते हैं और स्नान करके हंस बनकर यहां से जाते हैं।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h2 id="text1"class="main_headding text-center fw-bold">2. दक्षिणी मंडल-</h2>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(अ)जानकीकुंड-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">श्री कामदगिरि प्रमुख द्वार से लगभग 1.5 किलोमीटर दूर जानकीकुंड नाम की बस्ती है जो चित्रकूट सतना राजमार्ग पर स्थित है। यहां पर एक प्रसिद्ध श्री राम जानकी मंदिर है तथा उसी के समीप लगभग 85 सीढ़ी नीचे उतरने पर मां मंदाकिनी के तट पर सुप्रसिद्ध जानकीकुंड तीर्थ स्थित है। ऐसी मान्यता है कि इस कुंड में मां जानकी (सीता माता) नित्य स्नान करती थी। इसीलिए इसका नाम जानकी कुंड पड़ा। यहां पर मां जानकी जी के पावन चरण चिन्ह के दर्शन होते हैं ।</p>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/sita charan.jpg" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/sphatic shila.jpg" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ब)स्फटिक शिला-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">जानकी कुण्ड से कुछ दूरी पर मंदाकिनी नदी के किनार ही यह शिला स्थित है। माना जाता है कि इस शिला पर सीता के पैरों के निशान मुद्रित हैं। कहा जाता है कि जब वह इस शिला पर खड़ी थीं तो जयंत ने काक रूप धारण कर उन्हें चोंच मारी थी। इस शिला पर राम और सीता बैठकर चित्रकूट की सुन्दरता निहारते थे।
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(स)अत्रि-अनुसुइया आश्रम-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;"> मंदाकिनी नदी को ऋषि अत्री की प्यास बुझाने के लिए अनुसुईया ने उसे उस समय प्रकट किया था. जब अत्री महाराज तपस्या में लीन थे. उसी समय तपस्या के मध्य अत्री महाराज ने जल की मांग की थी. तब से आज तक चित्रकूट में मंदाकिनी नदी बह रही है. <br>
+                        श्री चित्रकूट धाम में स्थित अपने दीर्घकालिक आवास को त्यागने के उपरांत भगवान श्री सीताराम लक्ष्मण जी महर्षि अत्रि मुनि के आश्रम गए। महर्षि अत्रि और माता अनुसुइया ने भगवान श्री रामचंद्र जी को अपने पुत्र की भांति अपनाया। माता अनुसुइया ने मां जानकी जी को यहीं पर स्त्री धर्म की शिक्षा दी है। मां मंदाकिनी गंगा का मूल स्रोत अत्रि अनुसुइया आश्रम ही माना जाता है। मां मंदाकिनी गंगा को स्वर्ग से पृथ्वी पर लाने वाली परम सती माता अनुसुइया जी ही हैं। जिन्होंने अपने सतीत्व धर्म के बल पर भगवान की तीनों प्रधान विभूतियों (ब्रह्मा, विष्णु, महेश) को अपने पुत्र बनाकर झूला झुला दिया। आज भी यहां के लोकगीतों में गाया जाता है कि
+                    </p>
+                    <p class="text-center">माता अनुसुइया ने डाल दियो पालना।<br>
+                        झूल रहे तीनों देव बन कर के लालना।।</p>
+                        
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/sati anusuiya.jpg" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/amaravati 2.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(द)अम्बरीष आश्रम (अमरावती)-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">महर्षि अत्रि के आश्रम से विदा होकर भगवान श्री राम जी ने एक तापस आश्रम में पहुँचकर रात्रि विश्राम किया। उस अमरावती नामक आश्रम में भगवान श्री राम जी के पूर्वज राजर्षि अम्बरीष ने घोर तपस्या की थी। घने जंगलों के बीच स्थित इस आश्रम की प्राकृतिक छटा अत्यंत रमणीय है। कुछ वर्ष पूर्व श्री स्वामी जी के नाम से विख्यात एक महान संत ने दीर्घ काल तक यहां तप साधना की है। इसी तीर्थ के निकट भगवान श्री राम जी ने विराध नामक असुर का वध किया था। उस स्थान को विराध कुंड के नाम से जाना जाता है।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(य) सरभंग आश्रम-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">प्रभु राम जब चित्रकूट से वनवास काल पूरा करने के बाद प्रस्थान कर रहे थे. तब प्रभु राम अमरावती के आश्रम और सरभंगा आश्रम में रुके थे. इसीलिए सरभंगा आश्रम का काफी बड़ा महत्व चित्रकूट में माना जाता है. पर्यटन के लिहाज से यह जगह काफी विकसित हो रही है. यहां के महात्मा बताते हैं कि यदि आप 10 बार गंगा का स्नान करते हैं और यदि एक बार आप चित्रकूट के सरभंगा आश्रम आते हैं तो आपको बड़ा पुण्य मिलेगा.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/sarbhag .jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/sutikshan.jpg" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(र) सुतीक्ष्ण आश्रम-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">महर्षि सुतीक्ष्ण परम तेजस्वी महर्षि अगत्स्य के शिष्य थे। उनके आगाध प्रेम की स्थिति को देखकर भगवान श्री राम जी बहुत प्रसन्न हुए और उन्हें मनचाहा वरदान प्रदान किया। गुरु शिष्य परंपरा में सुतीक्ष्ण जी ऐसे अनूठे साधक थे। जिन्होंने अपने गुरुदेव को भगवान श्री राम जी के दर्शन गुरु दक्षिणा के रूप में करवाये। वर्तमान में सुतीक्ष्ण आश्रम सरभंग आश्रम से 7 किलोमीटर की दूरी पर है। सरभंग आश्रम से सुतीक्ष्ण आश्रम मार्ग पर यहां से 2 किलोमीटर पहले सिद्धा पहाड़ नामक एक पर्वत है जिसे अस्थि समूह के नाम से भी जाना जाता है। ऐसा कहा जाता है कि राक्षसों ने ऋषि-मुनियों को मारकर उनका आहार कर लिया था और उनके कंकाल का एक पूरा पहाड़ बना दिया था। चित्रकूट क्षेत्र में ऋषि मुनियों की ऐसी दुर्दशा देखकर भगवान श्री राम जी के नेत्रों मे अश्रुविंदु छलक आए और उन्होंने प्रतिज्ञा की कि मैं इस पृथ्वी से असुर समूह का समूल नाश कर दूंगा।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row p-0 m-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ल) अघमर्षण कुंड धारकुंडी आश्रम-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;"> महाभारत के अनुसार अघमर्षण कुंड वह स्थान है जहां पर एक यक्ष ने धर्मराज युधिष्ठिर से धर्म संबंधी अनेक प्रश्न पूछे थे। यह प्रसंग यक्ष-युधिष्ठिर संवाद के नाम से जाना जाता है। यहां पर स्नान करने से सभी प्रकार के पापों का नाश होता है। यह तीर्थ धार कुंडी नामक स्थान में स्थित है। धारकुंडी में एक जल स्रोत की धारा एक कुंड में गिरती है। यह दृश्य बड़ा ही मनोहारी है। यहां पर परमहंस स्वामी सच्चिदानंद जी महाराज ने दीर्घकाल तक तप करके एक अभिनव तीर्थ की स्थापना की।</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/dharkundi.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row p-0 m-0">
+                <div class="col-sm-6">
+                    <img src="img/gupt godavari.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(श) गुप्त गोदावरी-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">विंध्य पर्वत श्रंखला के रमणीक अंचल में स्थित प्रकृति द्वारा निर्मित गुप्त गोदावरी की गुफाएं नैसर्गिक कला-कौशल का अत्यन्त दुर्लभ नमूना हैं। यहां पर दर्शन करके ऐसा लगता है कि जैसे प्रकृति रूपी चित्रकार ने अपनी जादुई तूलिका से कल्पना लोक का एक सर्वश्रेष्ठ चित्र बनाया है। यहां पर दो गुफाओं में से एक शुष्क है और दूसरी में जल प्रवाहित होता है। शुष्क गुफा में सीता कुंड, धनुष कुंड, सुईया माता और श्री राम दरबार के दर्शन होते हैं। दूसरी जल प्रवाह वाली गुफा के द्वार पर पंचमुखी शिवलिंग के दिव्य दर्शन हैं। गुफा के अंदर प्रवेश करने पर शेषनाग के फण, दूध धारा एवं श्री राम तथा लक्ष्मण कुंड आदि के दर्शन करके तीर्थयात्री अत्यंत प्रसन्नता का अनुभव करते हैं। यहां पर विभिन्न कुंडों में प्राप्त जल स्रोत गुप्त रूप से पवित्र गोदावरी नदी के प्रकट होने का प्रमाण देते हैं। इन गुफाओं के दर्शन करके श्रीरामचरितमानस का वह दोहा स्मृति पटल पर अंकित हो जाता है कि -
+                        प्रथमहिं देवन्ह गिरि गुहा राखेउ रुचिर बनाइ।
+                        राम कृपानिधि कुछ दिन बास करहिंगे आइ।।
+                        यहां की दुकानों में हस्तशिल्प द्वारा निर्मित अद्भुत कलाकृतियां प्राप्त होती हैं। जिन्हें प्राय: श्रद्धालु तीर्थयात्री स्मृति चिन्ह के रूप में अपने साथ ले जाते हैं।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ष)माण्डव्य आश्रम (मड़फा) -</h3>
+                    <P style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">गुप्त गोदावरी से 5 किलोमीटर उत्तर पश्चिम में एक पहाड़ी के समतल शिखर पर स्थित माण्डव्य ऋषि का अति प्राचीन आश्रम मड़फा के नाम से विख्यात है। यह तीर्थ नैसर्गिक सुषमा का एक अनूठा केंद्र है। इस पर्वत में अनेक गुफाएं, झरने तथा पापमोचन नामक पवित्र सरोवर है। विभिन्न जनश्रुतियों से प्रमाणित होता है कि भगवान श्री राम जी ने यहां कुछ काल तक रुक कर विश्राम किया था। पौराणिक तथ्यों से ज्ञात होता है कि माण्डव्य ऋषि परम तपस्वी एवं उच्च कोटि के अध्यात्मिक विभूति थे। एक बार धर्मराज के द्वारा उचित न्याय ना करने पर उन्हें मृत्युलोक में जन्म लेने का श्राप दे डाला था। उन्हीं के श्राप के परिणाम से धर्मराज को द्वापर युग में महात्मा विदुर के रूप में जन्म लेना पड़ा।</P>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/madpha.jpg"  style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row p-0 m-0">
+                <div class="col-sm-6">
+                    <img src="img/sarang.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ह)अगत्स्य आश्रम (सारंग)-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">यह तीर्थ सुरम्य पर्वत शिखरों, प्राकृतिक जल-स्रोतों एवं प्रकृति की मनोहारी छटा का एक अनुपम स्थान है। ऐसी मान्यता है कि महर्षि अगत्स्य ने यहां पर दीर्घकाल तक तप किया एवं उनके प्रिय शिष्य महर्षि सुतीक्ष्ण ने यहीं पर उन्हें भगवान श्री राम जी के दर्शन कराए। ऐसी लोक मान्यता है कि सारंग पर्वत के अंदर बनी हुई गुफा में वे धनुष बाण छुपाकर रखे गए थे जिनके द्वारा बाद में रावण का वध किया गया। दृष्टव्य है कि भगवान श्री विष्णु के धनुष का नाम सारंग ( शार्ङ्ग ) है। संभवत इसी कारण से इस तीर्थ का नाम भी सारंग पड़ा। यहाँ पर रामकुंड, लक्ष्मण कुंड, रामशिला (राम बैठका) एवं सीता रसोई जैसे तीर्थ स्थल आज भी विद्यमान हैं।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row py-3 m-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h2 id="text1"class="main_headding py-2 text-center  fw-bold">3. पूर्वी मंडल-</h2>
+            <P class="text-center">इस मंडल के प्रमुख तीर्थ स्थल एवं मंदिर निम्नलिखित हैं-</P>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                   <h3 id="text1"class="main_headding text-center fw-bold">(अ)वनदेवी (मां जानकी जी का चरण चिन्ह)-</h3>
+                   <P style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">श्री कामतानाथ भगवान के मंदिर से हनुमान धारा जाते हुए नयागांव और श्री हनुमान धारा के ठीक मध्य में मां वनदेवी का मंदिर आता है। जहाँ चित्रकूट वन की अधिष्ठात्री देवी मां वनदेवी की प्रतिमा विद्यमान है। समीप ही एक मंदिर में मां जानकी जी का चरण चिन्ह के दर्शन होते हैं। चित्रकूट क्षेत्र में मिलने वाले भगवान सीताराम जी के चरण चिन्हों में यह चिन्ह सबसे ज्यादा स्पष्ट हैं। यहां पर दर्शन करते हुए श्री रामचरितमानस के अयोध्या कांड की वह चौपाई स्मरण हो जाती है<br>
+
+                   <P class="text-center"> " बनदेबीं बनदेव उदारा  । <br>
+                    करिहहिं सास ससुर सम सारा।।"</P> 
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/vandevi.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/hanuman dhara.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ब)हनुमान धारा -</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">भारत के तीर्थों में चित्रकूट को इसलिए भी गौरव प्राप्त है क्योंकि इसी में भक्तराज हनुमान की सहायता से भक्त शिरोमणि तुलसीदास को प्रभु श्री राम के दर्शन हुए। चित्रकूट का विकास राजा हर्षवर्धन के जमाने में हुआ। यूं तो भारत में हनुमान जी के एक से बढ़कर एक भव्य मंदिर हैं, लेकिन उत्तर प्रदेश के बांदा से लगे मध्य प्रदेश के सतना जिले में स्थित चित्रकूट धाम के हनुमान धारा मंदिर की बात ही कुछ निराली है।आज भी यहां हनुमान जी की बाईं भुजा पर लगातार जल गिरता दिखाई देता है। यहां विराजे हनुमान जी की आंखों को देख कर ऐसा लगता है, मानो हमें देख कर वह मुस्कुरा रहे हैं। साथ में भगवान श्री राम का छोटा सा मंदिर भी यहां है। इस धारा का जल हनुमान जी को स्पर्श करता हुआ बहता है, इसीलिए इसे हनुमान धारा कहते हैं। इसके दर्शन से प्रत्येक व्यक्ति तनाव मुक्त हो जाता है तथा मनोकामना भी पूर्ण होती है।
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(स) सीता रसोई (जमदग्नि तीर्थ)-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">संकर्षण पर्वत के समतल शिखर पर श्री हनुमत् धारा तीर्थ से लगभग 60 सीढ़ियाँ ऊपर यह मनोहर स्थान स्थित है। ऐसा कहा जाता है कि इस तीर्थ में मां जानकी जी ने चित्रकूट स्थित ऋषि-मुनियों को भोजन कराया था। यहां पर मंदिर के गर्भ गृह में भगवान श्री सीता राम लक्ष्मण जी की प्रतिमाएं विराजमान हैं तथा पास में ही चूल्हा और बेलन आदि रसोई के उपकरण प्रतिष्ठित है जोकि मां जानकी जी की अतिथि सेवा का आज भी प्रत्यक्ष प्रमाण है। ऐसा भी माना जाता है कि इसी तीर्थ में श्री जमदग्नि ऋषि ने दीर्घ काल तक अपनी तप साधना संपन्न की।</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/sita_rashoi.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/devangna.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-0 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="text-warning fw-bold">(द) देवाङ्गना तीर्थ-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">श्री हनुमान धारा तीर्थ से लगभग 1 किलोमीटर पूर्व संकर्षण पर्वत के अंचल में ही यह तीर्थ स्थल सुशोभित है। यहां का पर्वतीय दृश्य तथा जलप्रपात अत्यंत मनोरम हैं। ऐसा माना जाता है कि भगवान श्री राम जी के वनवास काल में उनके दर्शनों के लिए न केवल चित्रकूट तीर्थ स्थित ऋषि-मुनि एवं वनवासी कोल भील ही पधारे थे बल्कि स्वर्ग लोक की अप्सराएं (देवाङ्गनाएं) भी भगवत दर्शन के लिए श्री चित्रकूट धाम पधारीं और इसी स्थान पर उन्होंने भगवान श्री राम जी के दर्शन प्राप्त किए। यहां निर्जन वन अंचल में स्थित एक मंदिर में एक नारी मूर्ति के दर्शन होते हैं जो देवराज इंद्र की पुत्र-वधू एवं देव कुमार जयंत की पत्नी जयंती (देवाङ्गना) की मूर्ति है उसने यहां दीर्घकाल तक तप किया था। इस तीर्थ में श्री हनुमान जी की प्रतिमा के साथ ही कई अन्य देवी-देवताओं की प्रतिमाएं भी स्थापित हैं। यह तीर्थ श्री चित्रकूट धाम के निर्माणाधीन हवाई-अड्डे के निकट ही स्थित है।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(य)कोटि तीर्थ-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;" >देवाङ्गना तीर्थ स्थल से 1 किलोमीटर दूर उत्तर दिशा में पूर्वोक्त संकर्षण पर्वत पर ही कोटि तीर्थ नामक एक तीर्थ स्थल विद्यमान है। इस तीर्थ में भी एक झरना निरंतर निर्झरित होता रहता है एवं समीप ही एक प्राकृतिक जल-स्रोत भी है। प्राचीन चित्रकूट माहात्म्य के अनुसार इस तीर्थ में स्नान करने से करोड़ों अश्वमेध यज्ञ का फल प्राप्त होता है। ऐसा माना जाता है कि यहां पर समस्त तीर्थों ने अपने आधिदैविक स्वरूप में उपस्थित होकर भगवान श्री राम जी के दर्शन प्राप्त किए। इसलिए इस तीर्थ को कोटि तीर्थ कहा जाता है।यहां पर श्री हनुमान जी की एक दिव्य प्रतिमा प्रतिष्ठित है जोकि अत्यंत सिद्धिदात्री बताई जाती है। ऐसी भी मान्यता है कि चित्रकूट तीर्थ के सुप्रसिद्ध संत श्री रणछोड़ दास जी महाराज ने यहीं पर तप करके सिद्धि प्राप्त की थी।</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/kotiteerth.jpg" style="height: 300px; width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">                 </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/bnakhe sidh 2.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(र)बाँकेसिद्ध तीर्थ-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">कोटि तीर्थ से 1 किलोमीटर दूर उत्तर दिशा में पूर्वोक्त संकर्षण पर्वत पर ही बांकेसिद्ध नाम का एक अत्यंत मनोरम तीर्थ स्थल स्थित है। संस्कृत भाषा के शब्द वाक् सिद्धि का अपभ्रंश रूप ही बांकेसिद्ध कहलाता है जिसका अर्थ है वाणी की सिद्धि। यहां पर तप करके अगणित साधु-संतों ने वाणी की सिद्धि प्राप्त की। महासती मां अनुसुइया के अनुज भगवान कपिल मुनि ने भी यहां पर सुदीर्घ काल तक तप किया। यह स्थल अपने प्राकृतिक सौंदर्य, देव निर्मित अद्भुत कंदरा तथा निर्मल जलप्रपात के लिए प्रसिद्ध है। यहां पर भगवान शिव की एक प्राचीन दिव्य मूर्ति विराजमान है। ऐतिहासिक दृष्टि से महत्वपूर्ण दुर्लभ शैल चित्र यहां की गुफा में दृष्टिगोचर होते हैं जो कि अब शनैः शनैः प्रायः नष्ट होते जा रहे हैं। जिनकी सुरक्षा अत्यंत आवश्यक है।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h2 id="text1"class="main_headding text-center fw-bold">4.पश्चिमोत्तर मंडल-</h2>
+            <P class="text-center">इस मंडल के प्रमुख तीर्थ स्थल एवं मंदिर निम्नलिखित हैं-</P>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(अ) श्री रामशैया तीर्थ-</h3>
+                    <P style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार से भरतकूप के सीधे रास्ते में खोही गांव से लगभग 2 किलोमीटर आगे श्री रामशैया तीर्थ विद्यमान है। एक अज्ञात पहाड़ी के अंचल में हरे भरे खेतों के मध्य एक विशाल पाषाण शिला एक ऊंचे चबूतरे पर स्थित है। जिस पर भगवान श्री सीताराम जी के विश्राम के चिन्ह अंकित हैं। उस शिला पर भगवान श्री राम जी के धनुष-बाण और जटाओं के निशान, श्री भरत लाल जी के द्वारा प्रणाम करने के निशान तथा भगवान श्री सीताराम जी के श्री विग्रह के निशान आज भी स्पष्ट दृष्टिगत होते हैं जिनके दर्शन करके श्रद्धालु तीर्थ यात्रियों के मन में सहसा ही एक भाव आता है कि मेरे प्रभु ने लोक कल्याण के लिए कितने कष्ट सहे। ऐसे परम उदार परमात्मा को भूल जाने वाला जीव वास्तव में ही बड़ा अभागा है।</P>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/ram saiya.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/bharatkoop.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ब)अनादि तीर्थ भरतकूप-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">यह परम पवित्र अनादि तीर्थ स्थल भरतकूप नामक बस्ती से लगभग 2 किलोमीटर दूर विंध्य-पर्वतश्रंखला के द्रोणाचल नामक पर्वत की तलहटी में स्थित है। श्री रामचरितमानस के अनुसार भरत जी जब अपने प्रभु श्री राम जी को मनाने के लिए श्री अवध धाम से श्री चित्रकूट धाम पधारे तब वह अपने साथ समस्त तीर्थों का जल अपने प्रभु भगवान श्री राम जी के अभिषेक के लिए लाए थे किंतु जब प्रभु श्री राम जी ने उनके अयोध्या लौटने की प्रार्थना को अस्वीकार कर दिया और स्वयं उन्हें 14 वर्ष तक अपने प्रतिनिधि के रूप में अयोध्या साम्राज्य का राज्य-भार संभालने के लिए राजी कर लिया। तब उस जल को आगामी 14 वर्षों तक संभाल कर रखने की आवश्यकता हुई। उस समय महर्षि अत्रि जी ने श्री भरत लाल जी को वह संपूर्ण तीर्थों का जल इसी कूप में स्थापित करने के लिए निर्देश दिया। इस प्रकार इस पवित्र तीर्थ के जल में सभी तीर्थों का पवित्र जल सन्निहित है।तभी से यह कूप भरत जी के नाम पर भरतकूप कहलाया। यह तीर्थ एक विशाल वटवृक्ष एवं एक मंडप के द्वारा आच्छादित है। यहां पर स्थित मंदिर में भगवान श्री राम दरबार के साथ श्री भरत लाल एवं राज महिषी देवी मांडवी की प्रतिमाएं भी विशेष रूप से प्रतिष्ठित हैं। अभी कुछ समय पूर्व ही प्राचीन मंदिर का जीर्णोध्दार प्रारम्भ किया गया है। इस तीर्थ के संदर्भ में श्री रामचरितमानस के अयोध्या कांड के एक दोहे में विशेष संकेत रूप से कहा गया है-
+
+                       <P class="text-center"> अत्रि कहेउ तब भरत सन सैल समीप सुकूप।<br>
+                       राखिअ तीरथ तोय तहँ पावन अमिय अनूप।।</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(स)सूर्य कुंड-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">झांसी-प्रयागराज राजमार्ग पर श्री चित्रकूट धाम के निकट प्रसिद्ध बेड़ी पुलिया स्थान से 5 किलोमीटर पूर्व उत्तर दिशा में मां मंदाकिनी के नाभि क्षेत्र में स्थित अथाह जल राशि वाला एक प्राकृतिक जलकुंड ही सूर्य कुंड के नाम से जाना जाता है। कुंड के समीप ही भगवान श्री राम जानकी मंदिर स्थित है जिसे साधु कुलभूषण श्री फलाहारी बाबा जी ने स्थापित कराया था। यहां पर 3 मार्च सन 1958 से सीताराम नाम का अखंड संकीर्तन वाद्ययंत्रों के साथ निरंतर चल रहा है। ऐसा माना जाता है कि जब भगवान श्री रामचंद्र जी अपने वनवास काल में श्री चित्रकूट धाम पधारे उस समय समस्त देवता उनके शुभ दर्शन के लिए उपस्थित हुए। भगवान श्री राम जी के कुल-पुरुष श्री सूर्य नारायण भगवान भी उस काल में श्री राम जी के दर्शन के लिए पधारे थे। जहां पर उन्होंने भगवान श्री राम जी के दर्शन किए वह स्थान सूर्य कुंड के नाम से प्रसिद्ध हुआ। यह तीर्थ प्राचीन काल से ही देवी देवताओं एवं ऋषि मुनियों का प्रिय साधना स्थल रहा है। आधुनिक काल में भी पूज्य संत देवरहवा बाबा, अनुसुइया आश्रम के श्री परमहंस जी महाराज एवं पूज्य फलाहारी बाबा जैसे संतो ने दीर्घकाल तक यहाँ पर तपस्या की है।</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/suryakund.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h2 id="text1"class="main_headding text-center fw-bold">5.श्री चित्रकूट धाम के आंचलिक तीर्थ स्थल एवं मंदिर-</h2>
+            <p class="text-center">इस मंडल के प्रमुख तीर्थ स्थल एवं मंदिर निम्नलिखित हैं-</p>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/tulsi janm kutir.jpg" style="height: 400px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(अ)श्री तुलसी जन्म कुटीर (तुलसी मंदिर)</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">प्रायः शांत प्रवाह में प्रवहमान मां कालिंदी (श्री यमुना जी) के दक्षिण तट पर स्थित राजापुर गांव में संत शिरोमणि गोस्वामी तुलसीदास जी महाराज का परम पुनीत जन्म स्थल (तुलसी मंदिर) स्थित है। मंदिर में भगवान श्री सीताराम दरबार, गोस्वामी तुलसीदास जी की यमुना जी से प्रकट स्वयंभू श्याम पाषाण प्रतिमा, उनकी चरण पादुका एवं यमुना जी से प्राप्त स्वयंभू शिवलिंग जी के दर्शन प्राप्त होते हैं। गोस्वामी तुलसीदास जी के द्वारा सेवित श्री नरसिंह स्वरूप भगवान शालिग्राम जी का विग्रह विशेष रुप से दर्शनीय है। निकट ही एक अन्य मंदिर में उन्हीं की हस्तलिखित श्रीरामचरितमानस की प्रति का अयोध्या कांड संरक्षित है। जिसके दर्शन करके श्रद्धालु तीर्थ यात्रियों को ऐसा प्रतीत होता है कि जैसे स्वयं गोस्वामी तुलसीदास जी महाराज के दर्शन करके अपना जीवन धन्य कर लिया हो। उपरोक्त ग्रंथ का कागज अत्यंत जीर्ण हो जाने से उसे अनेक प्रकार की विधियों के द्वारा संरक्षित किया गया है। अनेक वस्त्रों से आच्छादित यह ग्रंथ एक बहुत ही मजबूत तिजोरी में विराजमान किया गया है। गोस्वामी तुलसीदास जी महाराज के जन्म के संबंध में निम्न दोहा लोक विश्रुत है<br>
+
+                        <p class="text-center">"पन्द्रह सौ चौवन बिसे,कालिंदी के तीर। <br>
+                        श्रावण शुक्ला सप्तमी , तुलसी धर्यो शरीर।।"a</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(ब)संकट मोचन हनुमान मंदिर(राजापुर)-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">श्री हनुमंत लाल जी के द्वारा स्वपनादेश के अनुसार गोस्वामी तुलसीदास जी अपनी जन्मभूमि राजापुर में किसी शिला पर चंदन से श्री हनुमंत लाल जी की आकृति बनाकर उसका नित्य पूजन किया करते थे। जिसके लिए वह प्रतिदिन पूजन के प्रारंभ में आवाहन तथा पूजन के समापन अवसर पर विसर्जन अनिवार्य रूप से करते थे किंतु एक दिन संयोगवश पूजन करने के उपरांत वे विसर्जन करना भूल गए। बाद में जब वे आकृति मिटाने लगे तो वह नहीं मिटी। तब उन्हें इस बात का बोध हुआ कि इस शिला पर आज से श्री हनुमान जी की स्थाई प्रतिष्ठा हो चुकी है। तब से वे उसी शिला पर श्री हनुमान जी का नित्य पूजन करने लगे। इस मंदिर की दीवारों पर सुंदरकांड, हनुमान चालीसा तथा हनुमान अष्टक अंकित हैं। इसी मंदिर में भगवान सीताराम जी का दरबार, श्री गौरीशंकर जी तथा श्री हनुमान जी के प्रथक-प्रथक मंदिर विद्यमान हैं। प्रत्येक मंगलवार व शनिवार को यहां भक्तों की भारी भीड़ एकत्र होती है। भक्तों के संकट को दूर करने के कारण श्री हनुमान जी को संकटमोचन के नाम से जाना जाता है। यह एक सिद्ध हनुमत तीर्थ है।</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/rajapur hanuman.jpg" style="height: 400px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <img src="img/nandi2.jpg" style="height: 350px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(स)हनुमत् तीर्थ नांदी तौरा-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">यह दिव्य हनुमत् तीर्थ श्री चित्रकूट धाम ( कर्वी)- राजापुर मार्ग के मध्य में स्थित पहाड़ी गांव से लगभग 5 किलोमीटर दूर नांदी तौरा गांव में स्थित है। इस तीर्थ में श्री हनुमंत लाल जी की अति प्राचीन एवं स्वयंभू पूर्वाभिमुखी प्रतिमा प्रतिष्ठित है। ऐसा कहा जाता है कि उपरोक्त हनुमत् विग्रह का श्री चरण पाताल गामी है। ब्रिटिश काल में किसी अंग्रेज अधिकारी के द्वारा मूर्ति स्थल की खुदाई करवाने पर भी हनुमान जी के गड़े हुए पैर का ओर-छोर नहीं प्राप्त हो सका। यह एक सिद्ध हनुमत् पीठ है। इस तीर्थ के प्रति संत शिरोमणि गोस्वामी तुलसीदास जी की अगाध श्रद्धा थी। मंदिर के मुख्य द्वार पर विगत 35 वर्षों से अखंड रामायण पाठ निरंतर चल रहा है। मंदिर समिति के द्वारा संस्कृत विद्यालय एवं गौशाला भी संचालित हो रही है। प्रत्येक मंगलवार एवं शनिवार को भारी संख्या में श्रद्धालु दर्शनार्थी यहां दर्शन करने के लिए आते हैं</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row m-0 p-0">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row m-0 p-0">
+                <div class="col-sm-6">
+                    <h3 id="text1"class="main_headding text-center fw-bold">(द)वाल्मीकि आश्रम लालापुर-</h3>
+                    <p style="text-align: justify;  letter-spacing: 2px; line-height: 1.4;">श्री चित्रकूट धाम (कर्वी)- प्रयागराज मार्ग पर कर्वी से लगभग 20 किलोमीटर दूर स्थित लालापुर नामक ग्राम में एक पहाड़ी के ऊपर श्री बाल्मीकि आश्रम नाम का यह प्रसिद्ध पवित्र तीर्थ विद्यमान है।चित्रकूट आने से पहले यहां पर भगवान श्री राम जी श्री वाल्मीकि जी से वनवास काल में अपने दीर्घकालीन विश्राम स्थल के लिए जिज्ञासा प्रकट की। तो श्री बाल्मीकि जी ने उन्हें चित्रकूटगिरि (कामदगिरि) में रहने के लिए प्रेरणा प्रदान की और साथ में यह भी की कहा वहां पर आपको वनवासी जीवन के उपयुक्त सब प्रकार से सुविधा प्राप्त होगी। इस सिद्ध क्षेत्र के अत्यंत निकट ही पुण्य सलिला वाल्मीकि नदी प्रवाहित होती है।</p>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/balmiki.jpg" style="height: 300px;width: 100%;" class="img-fluid shadow-img p-1 mb-2 m-2 p-0">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+          </div>
+ 
+
+ <!-- End about-->
+
+
+           <!--start footer-->
+    <div class="row footer-top p-0 m-0" style="min-height: 300px; background-color: rgb(51, 49, 47);">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 text-light  p-5 "
+          style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">
+          ट्रस्ट के संस्थापक अध्यक्ष साकेतवासी श्री महंत श्री प्रेम पुजारी दास जी महाराज "सिंहस्थ भूषण" ने आश्रम व्यवस्था
+          को अधिक कुशल बनाने तथा भविष्य में उत्तराधिकार को लेकर किसी भी प्रकार के विवाद से बचने एवं आश्रम के संतों एवं
+          संपत्तियों के हित को ध्यान में रखते हुए सन 1987-88 में श्री कामदगिरि प्रदिक्षणा प्रमुख द्वार (उत्तर) ट्रस्ट श्री
+          चित्रकूट धाम के नाम से एक प्राइवेट ट्रस्ट का गठन किया।
+        </div>
+  
+  
+        <div class="col-lg-3 col-md-6 col-sm-6 text-light p-4">
+          <div class="fs-3" style="color: rgb(255, 153, 51);">
+            महत्वपूर्ण लिंक
+            <hr style="height: 12%; color: rgb(255, 153, 51); border-width: 5px; ">
+          </div>
+          <div class="row ">
+            <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.5; letter-spacing: 1px;">
+              <ul>
+                <li> <a href="index.html" class="link">मुख्य पृष्ठ</a></li>
+                <!-- <li> <a href="#"class="link">मीडिया</a></li> -->
+                <li> <a href="video" class="link">वीडियो गैलरी</a></li>
+                <li><a href="event.html" class="link">वार्षिक आयोजनों का विवरण</a> </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.6 ; letter-spacing: 1px;">
+              <ul>
+                <li> <a href="about.html" class="link">बारे में</a></li>
+                <li> <a href="gallery.html" class="link">फोटो गैलरी</a></li>
+                <li> <a href="contect.html" class="link">संपर्क करें</a></li>
+                <li> <a href="feedback.html" class="link">सुझाव</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 text-light p-4">
+          <div class=" fs-3" style="color: rgb(255, 153, 51);">
+            संपर्क करें
+          <b>  <hr style="height: 12%; color: rgb(255, 155, 55); border-width: 5px;"> </b>
+          </div>
+          <span class="col-lg-4">
+            <b> पता:</b><span style="line-height: 2; letter-spacing: 2.3px;"> श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार
+              (उत्तर) ट्रस्ट चित्रकूट धाम , कामतन चित्रकूट (मध्य प्रदेश)-485334 <br>
+              <b> फ़ोन:</b> <a href="tel:9752233696" class="link "> +91-9752233696 </a>,
+              <a href="tel:8168462108" class="link"> +91-8168462108 </a> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="tel: 9451030513" class="link"> +91-9451030513 </a> ,
+              <a href="tel: 9453666803" class="link"> +91-9453666803 </a> <br>
+              <b>ईमेल :</b> <a class="link" href="mailto: Kamadgiritrust@gmail.com"> Kamadgiritrust@gmail.com</a>
+            </span>
+          </span>
+        </div>
+      </div>
+  
+      <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+        <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">&copy;2019 Kamadgiri Trust All Rights Reserved
+          &nbsp;&nbsp;&nbsp;
+         
+        </div>
+  
+      </div>
+  
+      <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+        <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">  Developed By 
+      <a href="doploper.html" style="text-decoration: none; color: white;"> Knight Coder </a>
+  
+         
+        </div>
+  </div>
+      </div>
+  
+      <!--end footer-->
+  
+    
+    
+        </div>
+</body>
+</html>

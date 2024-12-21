@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .nav-item {
+          align-items: end;
+          color: rgb(255, 153, 51);
+        }
+    
+        .menu:hover {
+          color: white;
+          border-radius: 10%;
+          background-color: rgb(255, 153, 51);
+    
+    
+        }
+        .link
+          {
+            text-decoration: none;
+            color: white;
+            transition: all ease-in-out 0.4s;
+    
+          }
+    
+          .link:hover
+          {
+            color: #d1350e;
+            
+          }
+
+          .form-control
+          {
+            margin-top: 25px;
+          }
+
+      
+          .shadow-img
+        {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .shadow-img:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .main
+        {
+            background-image: url(./image/background\ \(1\).jpeg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .main_headding{
+            transition: 0.7s;
+        }
+        .main_headding:hover{
+            background-color:rgb(255, 153, 51);
+            color: white;
+            border-radius: 0% 0% 40% 40%;
+        }
+        .main_headding:hover #text1{
+            color: white !important;
+        } 
+        #text1:hover{
+            color: white;
+            font-weight: 800;
+        }
+        #text1{
+            color: rgb(255, 153, 51);
+            font-weight: 800;
+        }
+
+        @media (max-width:500px)
+    {
+     #dd
+    {
+     
+     margin-top: -80PX;
+    }  
+    #button1
+    {
+      display: none;
+      margin-top: -60px;
+    }
+    #button2
+    {
+      display: none;
+      margin-top: -60px;
+    }
+   
+    #logo
+    {
+    display: block;
+    }
+    #hea
+    {
+      display: none;
+    }
+    }
+    @media (min-width:500px) and (max-width:740px){
+      #dd
+      {
+        margin-top: -80px;
+      }
+      
+    }
+   
+      </style>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+       
+      <!--Start Header-->
+    <div class="row m-0 p-0" style="background-color: rgb(255, 153, 51); min-height: 60px; ">
+
+        <div class="col-lg-3 col-md-6 col-sm-12 text-end pt-2 fs-5"> <a style="text-decoration: none;" class="text-light "
+            href="mailto: Kamadgiritrust@gmail.com">
+            <i class="bi bi-envelope"></i> &nbsp; Kamadgiritrust@gmail.com</a>
+        </div>
+  
+        <div class="col-lg-7 col-md-6 col-sm-12 fs-5 pt-2 text-center" style="color:white">
+         
+          <span class="fs-2">जय श्री कामता नाथ जी भगवान </span>
+        </div>
+  
+        <div class="col-lg col-md-6 col-sm-12 fs-3 text-light text-center justify-content-evenly">
+          
+        <a href="https://www.facebook.com/profile.php?id=100082020253358" style="text-decoration: none; color: white;"> <i class="bi bi-facebook "></i> </a> 
+          <a href="https://x.com/kamadgiritrust" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-twitter p-3"></i> </a>
+        </div>
+      </div>
+      <!--Header End-->
+  
+      <!--srat navbar-->
+  
+      <div class="row m-0 p-0 sticky-top bg-light " style="opacity: 0.9;">
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <img src="img/nlogo.png" id="logo" alt="" height="100px">
+       <span class="fw-bold" id="hea" style="font-size: 15px;">  श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार ट्रस्ट श्री चित्रकूट धाम </span> 
+        </div>
+  
+        <div class="col-lg-8 col-md-6 col-sm-12 fs-5" id="dd">
+          <!-- <img src="img/nlogo.png" id="logo1" alt="" height="100px"> -->
+  
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+  
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse ms-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3" id="nav">
+                  <li class="nav-item">
+                    <a class="nav-link menu active" aria-current="page" href="index.html">मुख्य
+                      पृष्ठ</a>
+                  </li>
+  
+                  <li class="nav-item menu dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      हमारे बारे में
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item menu" href="bare_me.html">श्री कामदगिरि के बारे में</a></li>
+                      <li><a class="dropdown-item menu" href="parikrama.html">श्री कामदगिरि प्रदक्षिणा के बारे में</a>
+                      </li>
+                      <li>
+                      <li><a class="dropdown-item menu" href="about.html">श्री चित्रकूट धाम तीर्थ क्षेत्र के बारे में</a>
+                      </li>
+                      <li><a class="dropdown-item menu" href="rech.html">श्री चित्रकूट धाम पहुंचने का साधन</a></li>
+                      <li><a class="dropdown-item menu" href="event.html">वार्षिक अयोजनो का विवरण</a></li>
+                    </ul>
+                  </li>
+  
+  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      श्री कामदगिरि ट्रस्ट
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item menu" href="vision.html">ट्रस्ट के बारे मे </a></li>
+                      <li><a class="dropdown-item menu " href="vision.html">ट्रस्ट के सदस्य </a></li>
+  
+                      <li><a class="dropdown-item menu" href="aim.html">ट्रस्ट का उद्देश्य </a></li>
+  
+                    </ul>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="nav-link menu active" href="mahant.html">महंत परम्परा</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      गैलरी
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item menu" href="gallery.html">फोटो गैलरी</a></li>
+                      <li><a class="dropdown-item menu" href="videoGallery.html">वीडियो गैलरी</a></li>
+  
+                    </ul>
+                  </li>
+                  <li class="nav-item "></li>
+                  <a class="nav-link menu active" href="contect.html">संपर्क करे</a>
+                  </li>
+  
+                </ul>
+  
+              </div>
+            </div>
+          </nav>
+  
+        </div>
+      
+      <div class="row p-0 m-0">
+        <div class="col-sm-12" style="height: 4px;background-color: rgb(255, 153, 51); width: 100%;"></div>
+      </div>
+    </div>
+      <!--end nabvar-->
+  
+
+   
+
+            <!--start parikrama-->
+            <!-- <div class="container-fluid main" style=" background-image: url(img/back.jpeg); background-size: cover; background-position: center; background-repeat: no-repeat;"> -->
+              <div class="row mb-5 m-0 p-0"
+              style="background-image: url(./img/banner.jpg);max-height: 250px; min-height: 250px;background-repeat: no-repeat; background-size:100% 100%; background-position: center;">
+              <div class="col-sm-12 d-flex justify-content-center align-items-center fs-1"
+                style="background-color: black; opacity: 0.6; color: rgb(255, 153, 51); font-weight: 800;">
+                श्री कामदगिरी का परिक्रमा 
+              </div>
+            </div>    <div class="row m-0 p-0">
+              <div class="col-sm-12 py-2 main_headding">
+                  <h1 id="text1" style="font-size: 45px; text-align: center; color: rgb(255, 153, 51); font-weight: bold;">
+                      श्री कामदगिरि प्रदक्षिणा (परिक्रमा) के प्रमुख मंदिर </h1>
+              </div>
+          </div>
+         <div class="row m-3 p-0">
+          <div class="col-sm-12 py-2 main_headding">
+              <h1 id="text1" style="color: rgb(255, 153, 51); text-align: center; font-weight: bold; ">प्रदक्षिणा (परिक्रमा)</h1>
+          </div>
+         </div>
+          <!-- pratham R-L-->
+          <div class="row m-0 p-0">
+              <div style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;" class="px-4">
+                  <p>भारतीय उपासना पद्धति में उपासना के विभिन्न 16 चरण होते हैं। जिनमें से एक
+                      प्रदक्षिणा (परिक्रमा) भी होती है। प्रत्येक मंदिर की, तीर्थ की एवं देवी-देवताओं की परिक्रमा सुनिश्चित
+                      होती है। विशिष्ट तीर्थों में विभिन्न प्रकर की परिक्रमाएँ होती है, जैसे पंचकोसी परिक्रमा, 14 कोसी
+                      परिक्रमा, 84 कोसी परिक्रमा आदि। ब्रज क्षेत्र में गिरिराज गोवर्धन जी की परिक्रमा सात कोस की होती है।
+                      जबकि श्री चित्रकूट धाम में श्री कामदगिरि की परिक्रमा 5 किमी. लगभग पौने दो कोस की है। प्रतिदिन हजारों
+                      लोग श्री कामदगिरि की परिक्रमा करते हैं जबकि अमावस्या या विशेष पर्वों पर यह संख्या लाखों में होती है।
+                      श्री कामदगिरि का प्राचीन परिक्रमा मार्ग बुंदेलखंड के राजाओं द्वारा बनवाया गया था जो लगभग 3 फीट चौड़ा
+                      चूना पत्थर से निर्मित था। जिसका नवीनीकरण एवं सौंदर्यीकरण वर्तमान सरकारों ने समय-समय पर करवाया है।
+                      परिक्रमा पथ पर अनेक मठ एवं मंदिर विद्यमान हैं जिनका विवरण निम्नवत है-</p>
+              </div>
+          </div>
+          <!-- END Pratam -->
+  
+          <!-- second (i)L-R -->
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5">
+                  <img src="./img/1.jpeg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+              <div class="col-sm-6  mt-5 mr-5" style="text-align: justify; letter-spacing: 1px;">
+  
+                  <h2 id="text1" class="main_headding py-2 text-center">(1)प्रमुख द्वार(उत्तर द्वार)</h2><br>
+                  <p>चित्रकूट तीर्थ का सबसे प्रमुख तीर्थ स्थल श्री कामदगिरि है और श्री कामदगिरि
+                      का प्रमुख तीर्थ प्रमुख द्वार है। उत्तर दिशा में स्थित द्वार को ही प्रमुख द्वार कहा जाता है।यहां पर
+                      श्री कामतानाथ भगवान के साथ-साथ श्री हनुमंत लाल जी के मुखारविंद के भी दर्शन होते हैं। कामतानाथ जी के
+                      ठीक वाम भाग में श्री राम दरबार (श्री राम झरोखा) के शुभ दर्शन हैं। इस स्थान पर कौशिल्या मंदिर,
+                      बद्रिकाश्रम ,लक्ष्मीनारायण मंदिर, शिव मंदिर, अष्टभुजा मांदुर्गा मंदिर, गोस्वामी तुलसीदास मंदिर एवं
+                      सद्गुरु समाधि मंदिर आदि अनेक मंदिरों की श्रंखला स्थित है। समस्त मंदिर समूह के व्यवस्था का संचालन
+                      उत्तरदाई ट्रस्टों के माध्यम से होता है। इस प्रमुख द्वार को चढ़ती पैकरमा के नाम से भी जाना जाता है।
+                      यहां लगभग डेढ़ सौ से दो सौ संत महात्मा , विद्यार्थी एवं कर्मचारी गण भगवत कार्यों में संलग्न रहते
+                      हैं।</p>
+              </div>
+          </div>
+          <!-- second End -->
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5 pt-3" style="text-align: justify; letter-spacing: 1px;">
+                  <h2  id="text1" class="main_headding py-2 text-center">(2)पूर्व द्वार मुखारविन्द (द्वितीय द्वार)</h2><br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">प्रमुख द्वार से थोड़ा आगे परिक्रमा पथ पर ही एक स्थान है; जहाँ पूर्वाभिमुखी
+                      मन्दिर में भगवान् श्री कामदानाथ जी की दो कृष्णवर्णी मूर्तियाँ विराजमान हैं। इनमें से एक को प्राकृतिक
+                      कहा जाता है और दूसरी अपेक्षाकृत लघु प्रतिमा भूतपूर्व पन्ना नरेश अमान सिंह द्वारा स्थापित बताई जाती
+                      है। इस प्रतिमा के मुख में सात शालिगराम विद्यमान हैं। भगवान् कामदानाथ के इस मन्दिर के पार्श्व में
+                      पन्ना-नरेश द्वारा स्थापित भगवान् श्रीरामचन्द्र जी की मूर्ति भी विराजमान है। इसी से मिला हुआ हनुमान्
+                      जी का मन्दिर है; जहाँ यात्रीगण कामनापूर्ति के लिए अर्जी लगाते हैं और उसकी पूर्ति पर इनकी पूजा-अर्चना
+                      करते हैं। यहाँ भगवान् कामदानाथ जी के मन्दिर के सामने चार कुंड बने हुए हैं। कामना-पूर्ति पर श्रद्धालु
+                      इन्हें अन्न से भर देते हैं। इस स्थान से स्वामी नरहरिदास जी के आश्रम के पीछे गोस्वामी तुलसीदास जी
+                      द्वारा रोपित पीपल के वृक्ष तक का परिक्रमा क्षेत्र 'सर्व सिद्ध क्षेत्र' कहलाता है।
+                  <p>
+              </div>
+              <div class="col-sm-6 mt-5"><br>
+                  <img src="img/2.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+          </div>
+  
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5">
+                  <img src="img/gtn.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+              <div class="col-sm-6  mt-5" style="text-align: justify; letter-spacing: 1px;">
+  
+                  <h2 id="text1" class="main_headding py-2 text-center">(3) नरहरि दास भजन कुटी</h2> <br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">महानतम तीर्थ श्री चित्रकूट धाम प्राचीन काल से ही ऋषियों मुनियों एवं संत
+                      महापुरुषों की पावन तपस्थली रहा है। इसी क्रम में भगवान श्री रामानंदाचार्य जी की शिष्य परंपरा में
+                      दीक्षित श्री नरहरि दास जी ने श्री कामदगिरि प्रदक्षिणा में दीर्घकाल तक साधना की है एवं भगवत
+                      साक्षात्कार का आनंद प्राप्त किया है। यह विशेष उल्लेखनीय है कि स्वामी नरहरि दास जी ही गोस्वामी तुलसी
+                      दास जी के अभिभावक एवं मार्गदर्शक सद्गुरु रहे हैं। इनकी भजन कुटी आज भी श्री चित्रकूट धाम की परिक्रमा
+                      में स्थित है।</p>
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6  mt-5 pt-3" style="text-align: justify; letter-spacing: 1px;">
+                  <h2 id="text1" class="main_headding py-2 text-center">(4) गोस्वामी तुलसी दास जी के द्वारा रोपित पीपल (अश्वत्थ) वृक्ष</h2><br>
+  
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">स्वामी नरहरि दास जी की भजन कुटी के पृष्ठ भाग में स्थित जर्जर प्राचीन पीपल
+                      का वृक्ष आज भी गोस्वामी तुलसी दास जी के चित्रकूट आवास का साक्षी है। ऐसी मान्यता है कि इस वृक्ष का
+                      आरोपण स्वयं गोस्वामी तुलसीदास जी ने अपने कर कमलों से किया था।
+                  </p>
+              </div>
+              <div class="col-sm-6 mt-5"><br>
+                  <img src="./img/pipal.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5">
+                  <img src="./img/kamadgiri4.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+              <div class="col-sm-6  mt-5" style="text-align: justify; letter-spacing: 1px;">
+  
+                  <h2 id="text1" class="main_headding py-2 text-center">(5) नवदुर्गा / साक्षीगोपाल</h2> <br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">कामदगिरि की दक्षिण दिशा में रामानन्दी महानिर्वाणी अखाड़ा के थोड़ा आगे
+                      परिक्रमा पथ पर यह मन्दिर अवस्थित है। इसका निर्माण श्री राधा एवं भगवान् कृष्ण की आराधिका बरौंधा स्टेट
+                      की महारानी चन्द्र प्रभा कुंवरि की प्रेरणा से महाराज गया प्रसाद सिंह ने कराया था। यहाँ राधा-कृष्ण के
+                      विग्रह स्थापित हैं। माना जाता है कि कामदगिरि की परिक्रमा करने वाले का साक्ष्य देने के लिए वे साक्षी
+                      (साखी) के रूप में यहाँ विद्यमान हैं।इस मन्दिर की भित्तियों पर दाहिने हाथ की तर्जनी उंगली से सीताराम
+                      लिखने की परंपरा है।</p>
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5 pt-3" style="text-align: justify; letter-spacing: 1px;">
+                  <h2 id="text1" class="main_headding py-2 text-center">(6) विरजा कुंड</h2><br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">पौराणिक मान्यताओं के अनुसार भगवान श्री हरि के प्रिय धाम श्री बैकुंठ धाम में
+                      पवित्र विरजा नदी विद्यमान है। जब भगवान श्री राम जी अपने वनवास काल में श्री चित्रकूट धाम पधारे तो
+                      उनके पुण्य दर्शनों के लिए विरजा नदी विरजा कुंड के रूप में श्री कामदगिरि की परिक्रमा में प्रकट हुईं।
+                      श्रद्धालु तीर्थयात्री आज भी उनके आचमन और दर्शन का लाभ प्राप्त करते हैं।
+                  <p>
+              </div>
+              <div class="col-sm-6 mt-5"><br>
+                  <img src="./img/6.jpeg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+          </div>
+  
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5">
+                  <img src="img/dd7.jpeg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+              <div class="col-sm-6 mt-5" style="text-align: justify; letter-spacing: 1px; ">
+                  
+                  <h2 id="text1" class="main_headding py-2 text-center">(7) श्री कामदगिरि दक्षिण द्वार(सुरा गऊ)</h2> <br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">गिरिराज चित्रकूट की परिक्रमा के दक्षिणी भाग में यह द्वार स्थित है जिसे
+                      कामधेनु द्वार अथवा सुरभि गौ द्वार भी कहते हैं। ऐसी मानता है कि इस गुफा द्वार में अन्य द्वारों की
+                      अपेक्षा सबसे बाद तक प्रवेश संभव रहा है। कुछ सीढ़ियां चढ़कर गुफा द्वार पर गौ माता के दर्शन होते हैं।
+                      संतो के द्वारा ऐसा सुना जाता है कि यही सुरभि गौ माता अपने दूध से गिरिराज भगवान का अभिषेक करती थीं।
+                      वर्तमान में इस द्वार के कामधेनु मन्दिर में 'गो सेवा मिशन' बेनीवाल (पंजाब) के अध्यक्ष स्वामी
+                      कृष्णानन्द जी महाराज 'भूरीवालों' के द्वारा दिनांक 15/11/2016 से दिव्य गो ज्योति की स्थापना तथा अखण्ड
+                      हरिनाम संकीर्तन का कार्यक्रम संचालित है। जिसकी संपूर्ण व्यवस्था श्री कामदगिरि प्रमुख द्वार (उत्तर)
+                      ट्रस्ट के द्वारा की जाती है। अखंड हरिनाम संकीर्तन का उद्देश्य संपूर्ण विश्व कल्याण एवं गौ माता की
+                      सुरक्षा है।</p>
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5 pt-3" style="text-align: justify; letter-spacing: 1px;">
+                  <h2 id="text1" class="main_headding py-2 text-center">(8) भरत मिलाप(चरण पादुका) मंदिर</h2><br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">यह स्थान कामदगिरि के दक्षिण भाग में परिक्रमा पथ पर अवस्थित है। मंदिर के
+                      विस्तृत प्राङ्गण में तीन छतरियाँ बनी हुई हैं, जिनके अंतर्गत पाषाण शिला पर प्रभु श्रीराम जी और
+                      भक्तशिरोमणि श्री भरतलाल जी के चरण चिन्ह अंकित हैं। यहां यह तथ्य सिद्ध होता है कि प्रेम की आंच से
+                      पत्थर भी पिघल सकते हैं तो यदि भगवान की भक्ति से किसी का ह्रदय ना पिघले तो ऐसा समझना चाहिए कि उस
+                      व्यक्ति का हृदय पत्थर से भी ज्यादा कठोर है। यहां पर आज भी भगवत भक्तों की भावसमाधि लगते देखा जाता है।
+                  <p>
+              </div>
+              <div class="col-sm-6 mt-5"><br>
+                  <img src="img/8.jpeg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5">
+                  <img src="img/9.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+              <div class="col-sm-6  mt-5" style="text-align: justify; letter-spacing: 1px;">
+  
+                  <h2 id="text1" class="main_headding py-2 text-center">(9)लक्ष्मण पहाड़ी</h2> <br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">श्री कामदगिरि के दक्षिण में लक्ष्मण पहाड़ी नाम की छोटी पहाड़ी है, जिसमें 100
+                      से अधिक सीढ़ियां चढ़कर मंदिर में श्री लक्ष्मण जी के दर्शन होते हैं। कहा जाता है कि लक्ष्मण जी रात्रि
+                      में भगवान राम और जानकी के शयन स्थान से कुछ दूर में, हाथ में धनुष वाण ले करके उनकी रक्षा के लिये
+                      जागरण किया करते थे - जैसे कि मानस में उल्लेख है कि-<br> <br>
+                      कछुक दूरि सजि बान सरासन।<br>
+                      जागन लगे बैठि बीरासन।।<br> <br>
+                      लक्ष्मण पहाड़ी पर ही मंदिर के सामने एक कूप (कुआं) स्थित है। धरातल के स्तर से काफी ऊँचाई में स्थित
+                      होने पर भी इसमें हमेशा जल परिपूर्ण रहता हैं। लक्ष्मण मंदिर के दर्शन हेतु रोपवे(उड़न खटोला) निर्मित
+                      होकर चालू हो चुका है।</p>
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5 pt-3" style="text-align: justify; letter-spacing: 1px;">
+                  <h2 id="text1" class="main_headding py-2 text-center">(10)श्री कामदगिरि तृतीय मुखारविन्द</h2><br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">यद्यपि श्री कामदगिरि प्रदक्षिणा का तृतीय दक्षिण द्वार कामधेनु द्वार है
+                      किंतु तृतीय मुखारविंद के दर्शन खोही में स्थित श्री कामतानाथ तृतीय मुखारविंद मंदिर में होते हैं जोकि
+                      लक्ष्मण पहाड़ी द्वार से थोड़ा आगे परिक्रमा पथ पर ही स्थित है। यह तृतीय मुखारविंद खोही निर्वाणी
+                      अखाड़ा के अंतर्गत आता है।
+                  <p>
+              </div>
+              <div class="col-sm-6 mt-5"><br>
+                  <img src="img/mukharbind.jpeg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5">
+                  <img src="img/sarayudhara.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+              <div class="col-sm-6  mt-5" style="text-align: justify; letter-spacing: 1px;">
+  
+                  <h2 class="main_headding py-2 text-center" id="text1">(11) सरयूधारा</h2> <br>
+                  <p>भगवान श्रीराम जी की पावन जन्मभूमि श्री अवध धाम में प्रवाहित होने वाली पुण्य
+                      सलिला माँ सरयू गुप्त रूप से प्रभु सेवा के लिए श्री कामदगिरि पर्वत पर प्रकट होती हैं। जिनके दर्शन
+                      वर्षा ऋतू में एक धारा के रूप में सरयू धारा के नाम होते हैं। ऐसा कहा जाता है कि रसिक सम्प्रदाय के
+                      महान संत श्री प्रयागदास जी (मामा जी) को यहीं पर भगवान श्री सीताराम जी के पावन दर्शन प्राप्त हुए थे।
+                      परिक्रमा करते हुए श्रध्दालु तीर्थ यात्रियों के लिए आज भी ये पावन परंपरा विद्यमान है कि यहां कुछ क्षण
+                      विश्राम करके फिर आगे परिक्रमा करनी चाहिए।<br>
+                      इस सम्बन्ध में एक दोहा लोक विश्रुत है-<br><br>
+                      कोटि कल्प काशी बसै, मथुरा कल्प सहास।<br>
+                      एक निमिष सरयू बसै, तुलै न तुलसीदास ।।</p>
+              </div>
+          </div>
+          <div class="row m-0 p-0">
+              <div class="col-sm-6 mt-5 " style="text-align: justify; letter-spacing: 1px;">
+                  <h2 id="text1" class="main_headding py-2 text-center">(12)पश्चिम चतुर्थ द्वार(चौथा फाटक)</h2><br>
+                  <p style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">पश्चिम दिशा में स्थित गुफ़ा के द्वार को पश्चिम चतुर्थ द्वार के नाम से जाना
+                      जाता है। यहां पर भगवान श्री राम दरबार के साथ ही कामतानाथ भगवान के चौथे मुखारविंद के दर्शन होते हैं।
+                      यह मंदिर परिक्रमा में स्थित कामता ग्राम के अंतर्गत आता है। यह स्थान सरयू धारा से कुछ आगे स्थित है।
+                  <p>
+              </div>
+              <div class="col-sm-6 mt-5"><br>
+                  <img src="img/4th get.jpg" alt="" style=" width: 100%; height: 350px;" class="shadow-img">
+              </div>
+          </div>
+            </div>
+              
+
+        <!--end parikrama-->
+
+   
+
+
+
+
+           <!--start footer-->
+    <div class="row footer-top p-0 m-0" style="min-height: 300px; background-color: rgb(51, 49, 47);">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 text-light  p-5 "
+          style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">
+          ट्रस्ट के संस्थापक अध्यक्ष साकेतवासी श्री महंत श्री प्रेम पुजारी दास जी महाराज "सिंहस्थ भूषण" ने आश्रम व्यवस्था
+          को अधिक कुशल बनाने तथा भविष्य में उत्तराधिकार को लेकर किसी भी प्रकार के विवाद से बचने एवं आश्रम के संतों एवं
+          संपत्तियों के हित को ध्यान में रखते हुए सन 1987-88 में श्री कामदगिरि प्रदिक्षणा प्रमुख द्वार (उत्तर) ट्रस्ट श्री
+          चित्रकूट धाम के नाम से एक प्राइवेट ट्रस्ट का गठन किया।
+        </div>
+  
+  
+        <div class="col-lg-3 col-md-6 col-sm-6 text-light p-4">
+          <div class="fs-3" style="color: rgb(255, 153, 51);">
+            महत्वपूर्ण लिंक
+            <hr style="height: 12%; color: rgb(255, 153, 51); border-width: 5px; ">
+          </div>
+          <div class="row ">
+            <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.5; letter-spacing: 1px;">
+              <ul>
+                <li> <a href="index.html" class="link">मुख्य पृष्ठ</a></li>
+                <!-- <li> <a href="#"class="link">मीडिया</a></li> -->
+                <li> <a href="video" class="link">वीडियो गैलरी</a></li>
+                <li><a href="event.html" class="link">वार्षिक आयोजनों का विवरण</a> </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.6 ; letter-spacing: 1px;">
+              <ul>
+                <li> <a href="about.html" class="link">बारे में</a></li>
+                <li> <a href="gallery.html" class="link">फोटो गैलरी</a></li>
+                <li> <a href="contect.html" class="link">संपर्क करें</a></li>
+                <li> <a href="feedback.html" class="link">सुझाव</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 col-sm-12 text-light p-4">
+          <div class=" fs-3" style="color: rgb(255, 153, 51);">
+            संपर्क करें
+          <b>  <hr style="height: 12%; color: rgb(255, 155, 55); border-width: 5px;"> </b>
+          </div>
+          <span class="col-lg-4">
+            <b> पता:</b><span style="line-height: 2; letter-spacing: 2.3px;"> श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार
+              (उत्तर) ट्रस्ट चित्रकूट धाम , कामतन चित्रकूट (मध्य प्रदेश)-485334 <br>
+              <b> फ़ोन:</b> <a href="tel:9752233696" class="link "> +91-9752233696 </a>,
+              <a href="tel:8168462108" class="link"> +91-8168462108 </a> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="tel: 9451030513" class="link"> +91-9451030513 </a> ,
+              <a href="tel: 9453666803" class="link"> +91-9453666803 </a> <br>
+              <b>ईमेल :</b> <a class="link" href="mailto: Kamadgiritrust@gmail.com"> Kamadgiritrust@gmail.com</a>
+            </span>
+          </span>
+        </div>
+      </div>
+  
+      <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+        <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">&copy;2019 Kamadgiri Trust All Rights Reserved
+          &nbsp;&nbsp;&nbsp;
+         
+        </div>
+  
+      </div>
+  
+      <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+        <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">  Developed By 
+      <a href="doploper.html" style="text-decoration: none; color: white;"> Knight Coder </a>
+  
+         
+        </div>
+  </div>
+      </div>
+  
+      <!--end footer-->
+  
+    
+    
+        </div>
+</body>
+</html>

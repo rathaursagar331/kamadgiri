@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+      *{
+        scroll-behavior: smooth;
+      }
+        .nav-item {
+          align-items: end;
+          color: rgb(255, 153, 51);
+        }
+    
+        .menu:hover {
+          color: white;
+          border-radius: 10%;
+          background-color: rgb(255, 153, 51);
+    
+    
+        }
+        .link
+          {
+            text-decoration: none;
+            color: white;
+            transition: all ease-in-out 0.4s;
+    
+          }
+    
+          .link:hover
+          {
+            color: #d1350e;
+            
+          }
+
+          .form-control
+          {
+            margin-top: 25px;
+          }
+          .main_headding{
+            transition: 0.7s;
+        }
+        .main_headding:hover{
+            background-color: rgb(255, 153, 51);
+            color: white;
+            border-radius: 0% 0% 40% 40%;
+        }
+        .main_headding:hover #text1{
+            color: white !important;
+        } 
+        #text1{
+           
+         color: rgb(255,153,51);
+         font-weight: 800;
+        }
+        #text1:hover{
+            color: white;
+            font-weight: 800;
+        }
+        .shadow-img
+        {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .shadow-img:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(-5px);
+        }
+        @media (max-width:500px)
+    {
+     #dd
+    {
+     
+     margin-top: -80PX;
+    }  
+    #button1
+    {
+      display: none;
+      margin-top: -60px;
+    }
+    #button2
+    {
+      display: none;
+      margin-top: -60px;
+    }
+   
+    #logo
+    {
+    display: block;
+    }
+    #hea
+    {
+      display: none;
+    }
+    }
+    @media (min-width:500px) and (max-width:740px){
+      #dd
+      {
+        margin-top: -80px;
+      }
+      
+    }
+      </style>
+</head>
+<body>
+    <div class="container-fluid m-0 p-0">
+       
+         <!--Start Header-->
+    <div class="row m-0 p-0" style="background-color: rgb(255, 153, 51);; min-height: 60px; ">
+
+      <div class="col-lg-3 col-md-6 col-sm-12 text-end pt-2 fs-5"> <a style="text-decoration: none;" class="text-light "
+          href="mailto: Kamadgiritrust@gmail.com">
+          <i class="bi bi-envelope"></i> &nbsp; Kamadgiritrust@gmail.com</a>
+      </div>
+
+      <div class="col-lg-7 col-md-6 col-sm-12 fs-5 pt-2 text-center" style="color:white">
+       
+        <span class="fs-2">जय श्री कामता नाथ जी भगवान </span>
+      </div>
+
+      <div class="col-lg col-md-6 col-sm-12 fs-3 text-light text-center justify-content-evenly">
+        
+      <a href="https://www.facebook.com/profile.php?id=100082020253358" style="text-decoration: none; color: white;"> <i class="bi bi-facebook "></i> </a> 
+        <a href="https://x.com/kamadgiritrust" target="_blank" style="text-decoration: none; color: white;"> <i class="bi bi-twitter p-3"></i> </a>
+      </div>
+    </div>
+    <!--Header End-->
+
+    <!--srat navbar-->
+
+    <div class="row m-0 p-0 sticky-top bg-light " style="opacity: 0.9;">
+      <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+        <img src="img/nlogo.png" id="logo" alt="" height="100px">
+     <span class="fw-bold" id="hea" style="font-size: 15px;">  श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार ट्रस्ट श्री चित्रकूट धाम </span> 
+      </div>
+
+      <div class="col-lg-8 col-md-6 col-sm-12 fs-5" id="dd">
+        <!-- <img src="img/nlogo.png" id="logo1" alt="" height="100px"> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-end" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pt-3" id="nav">
+                <li class="nav-item">
+                  <a class="nav-link menu active" aria-current="page" href="index.html">मुख्य
+                    पृष्ठ</a>
+                </li>
+
+                <li class="nav-item menu dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    हमारे बारे में
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item menu" href="bare_me.html">श्री कामदगिरि के बारे में</a></li>
+                    <li><a class="dropdown-item menu" href="parikrama.html">श्री कामदगिरि प्रदक्षिणा के बारे में</a>
+                    </li>
+                    <li>
+                    <li><a class="dropdown-item menu" href="about.html">श्री चित्रकूट धाम तीर्थ क्षेत्र के बारे में</a>
+                    </li>
+                    <li><a class="dropdown-item menu" href="rech.html">श्री चित्रकूट धाम पहुंचने का साधन</a></li>
+                    <li><a class="dropdown-item menu" href="event.html">वार्षिक अयोजनो का विवरण</a></li>
+                  </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    श्री कामदगिरि ट्रस्ट
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item menu" href="vision.html">ट्रस्ट के बारे मे </a></li>
+                    <li><a class="dropdown-item menu " href="vision.html">ट्रस्ट के सदस्य </a></li>
+
+                    <li><a class="dropdown-item menu" href="aim.html">ट्रस्ट का उद्देश्य </a></li>
+
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link menu active" href="mahant.html">महंत परम्परा</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle menu" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    गैलरी
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item menu" href="gallery.html">फोटो गैलरी</a></li>
+                    <li><a class="dropdown-item menu" href="videoGallery.html">वीडियो गैलरी</a></li>
+
+                  </ul>
+                </li>
+                <li class="nav-item "></li>
+                <a class="nav-link menu active" href="contect.html">संपर्क करे</a>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+        </nav>
+
+      </div>
+      <div class="row p-0 m-0">
+        <div class="col-sm-12" style="height: 4px;background-color: rgb(255, 153, 51); width: 100%;"></div>
+      </div>
+    </div>
+    <!--end nabvar-->
+
+
+<!--strat vision-->
+<div class="row mb-5 m-0 p-0"
+      style="background-image: url(./img/banner.jpg);max-height: 250px; min-height: 250px;background-repeat: no-repeat; background-size:100% 100%; background-position: center;">
+      <div class="col-sm-12 d-flex justify-content-center align-items-center fs-1"
+        style="background-color: black; opacity: 0.6; color: rgb(255, 153, 51); font-weight: 800;">
+        श्री कामदगिरी ट्रस्ट के बारे मे 
+      </div>
+    </div>
+
+    <!-- 1 -->
+<div class="row p-0 m-0  m-0 p-0 ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <h1 id="text1" class=" main_headding py-1" style="text-align: center;">ट्रस्ट के बारे में</h1><br/>
+        <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4;">ट्रस्ट के संस्थापक अध्यक्ष साकेतवासी श्री महंत श्री प्रेम पुजारी दास जी महाराज "सिंहस्थ भूषण" ने आश्रम व्यवस्था को अधिक कुशल बनाने तथा भविष्य में उत्तराधिकार को लेकर किसी भी प्रकार के विवाद से बचने एवं आश्रम के संतों एवं संपत्तियों के हित को ध्यान में रखते हुए सन 1987-88 में श्री कामदगिरि प्रदिक्षणा प्रमुख द्वार (उत्तर) ट्रस्ट श्री चित्रकूट धाम के नाम से एक प्राइवेट ट्रस्ट का गठन किया। जिसे कालांतर में पब्लिक ट्रस्ट के रूप में परिवर्तित कर दिया गया। ट्रस्ट के प्रबंध समिति के सदस्यो की संख्या सीमित रखने के लिए एवं ट्रस्ट को अधिक प्रभावशाली बनाने के उद्देश्य से एक सहयोगी ट्रस्ट श्री राम झरोखा ट्रस्ट के नाम से उसके साथ ही साथ स्थापना की , जिसके उद्देश्य पूर्वोक्त ट्रस्ट के समान ही हैं। दोनों ट्रस्ट मे ट्रस्टियों के मध्य से ही चुने गए सदस्यों को लेकर कार्य कारिणी समिति का गठन किया जाता है। जिनमें 7-7 सदस्य हैं-अध्यक्ष, उपाध्यक्ष, कोषाध्यक्ष, महामंत्री, मंत्री एवं दो अन्य विशिष्ट सदस्य।कार्य कारिणी समिति का कार्यकाल 3 वर्ष का होता है। जिसकी अवधि पूरी होने पर ट्रस्ट की मीटिंग बुलाकर पुन: नई कार्य कारिणी का चुनाव किया जाता है। ट्रस्ट के अध्यक्ष का पद आजीवन है। न्यासियों की सदस्यता सामान्य परिस्थितियों में आजीवन ही है, किंतु कार्यकारिणी के अन्य पदाधिकार 3 वर्ष के लिए मान्य होते हैं। अग्रिम चुनाव में विभिन्न पदाधिकारीगण पुन:चयनित भी हो सकते हैं और नहीं भी हो सकते हैं।
+        </p>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+   <!-- 12 -->
+ 
+  <!-- 13 -->
+  <div class="row p-0 m-0 " style="margin-top: 1%; text-align: center;" >
+    <h1 id="text1" class=" main_headding py-2 text-center"  >अतिथि सेवा</h1>
+   </div>
+   <div class="row p-0 m-0 " style="margin-top: 2%;">
+    <div class="col-sm-4 mt-1">
+      <img src="img/dharm.jpg"style="height: 100%; width: 100%;" class="shadow-img p-1 mb-5 bg-body rounded">
+    </div>
+    <div class="col-sm-4 mt-1">
+      <img src="img/dharm1.png"style="height: 100%; width: 100%;" class="shadow-img p-1 mb-5 bg-body rounded">
+    </div>
+    <div class="col-sm-4 mt-1">
+      <img src="img/dharm2.jpg"style="height: 100%; width: 100%;" class="shadow-img p-1 mb-5 bg-body rounded">
+    </div>
+   </div>
+  <!--  -->
+  <div class="row p-0 m-0 py-4" style="margin-top: 3%;">
+    <p style="text-align: justify; letter-spacing: 2px; line-height: 1.4;">परमपुनीत श्री चित्रकूट धाम मर्यादा पुरुषोत्तम भगवान श्री राम की पावन तपस्थली है। धर्म एवं परम्पराओं के 
+      अनुसार भारत वर्ष की पवित्र तीर्थ श्रंखला में श्री चित्रकूट धाम का अति विशिष्ट स्थान है। प्रतिदिन हजारों तीर्थ यात्री 
+      चित्रकूट आकर भगवान श्री कामतनाथ जी के दर्शनों का आलौकिक लाभ प्राप्त करते हैं। भगवान कामतानाथ जी के पावन 
+      आश्रम परिसर में ठहरने वाले अतिथियों की भोजन, आवास एवं भजन -पूजन आदि की समुचित व्यवस्था ट्रस्ट के द्वारा करवाई
+       जाती है।</p>
+   </div>
+   <!--  -->
+   <div class="row p-0 m-0 ">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+     <div class="container mt-2">
+    <h2 id="text1" class=" main_headding py-2 text-center"  >होटल रिसॉर्ट्स धर्मशाला</h2>
+    <!-- <h4 style="text-align: center; color: rgb(255,153,51);">श्रद्धालुओ को रुकाने, और भोजन की व्यवस्था</h4>             -->
+    <div class="table-responsive" >
+    <table class="table table-striped ">
+      <thead>
+        <tr class="table-success">
+          <th style="color: rgb(255,153,51);">क्रम संख्या</th>
+          <th style="color: rgb(255,153,51);">होटल का नाम</th>
+          <th style="color: rgb(255,153,51);">पता</th>
+          <th style="color: rgb(255,153,51);">संपर्क संख्या</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>सोनी धर्मशाला चित्रकूट ,मध्य प्रदेश</td>
+          <td>एमपी, कामतानाथ मंदिर रोड, चित्रकोट, चित्रकोट, मध्य प्रदेश</td>
+          <td>7419869240</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>गायत्री शक्ति पीठ चित्रकूट</td>
+          <td>गायत्री शक्ति पीठ, कामद गिरि रोड, लक्ष्मण भियार कॉलोनी,
+            सीतापुर, चित्रकूट, मध्य प्रदेश 485334</td>
+          <td>7942677761</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td> आदि चुनचुनगिरी मठ, जानकी कुंड, चित्रकूट, मध्य प्रदेश 485334</td>
+          <td>कर्नाटक माता आश्रम, पालीमार पेजावरा मठ की इकाई, सामने। भारतीय स्टेट बैंक, राजा शिवेंद्र भवन,
+          प्रमोदवन, जानकी कुंड, चित्रकूट, मध्य प्रदेश 210204</td>
+          <td>7942678329</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>जानकीकुंड, चित्रकूट, मध्य प्रदेश 485334</td>
+          <td> आदि चुनचुनगिरी मठ, जानकी कुंड, चित्रकूट, मध्य प्रदेश 485334</td>
+          <td>7947143144</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>लखेरा लक्षकार धर्मशाला चित्रकूट</td>
+          <td>जानकीकुंड, चित्रकूट, मध्य प्रदेश 485334</td>
+          <td>7947143277</td>
+        </tr>
+        <tr>
+          <td>06</td>
+          <td>साहूसमाज धर्मशाला चित्रकूट</td>
+          <td>लक्ष्मणभियार कॉलोनी, सीतापुर, चित्रकूट, मध्य प्रदेश 485334</td>
+          <td>7947411196</td>
+        </tr>
+        <tr>
+          <td>07</td>
+          <td> श्री महेश्वरीभवनधर्मशाला</td>
+          <td>श्री महेश्वरीभवनधर्मशाला, रामघाट मार्ग, टैम्पोन स्टैंड, चित्रकूट, मध्य प्रदेश 210204</td>
+          <td>8069266554</td>
+        </tr>
+        <tr>
+          <td>08</td>
+          <td>शिवहरे धर्मशाला चित्रकूट, मध्य प्रदेश</td>
+          <td>राम घाट,चित्रकूट,चित्रकूट,एमपी,भारत</td>
+          <td>8069266023</td>
+        </tr>
+        <tr>
+          <td>09</td>
+          <td>जयपुरिया स्मृतिभवन चित्रकूट</td>
+          <td>राम घाट रोड, तीर्थराजपुरी, सीतापुर, चित्रकूट, मध्य प्रदेश, भारत</td>
+          <td>9654673886</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>कलकत्ता वाला धर्मशाला चित्रकूट</td>
+          <td>सीतापुर,चित्रकूट,मध्य प्रदेश 210204</td>
+          <td>9365746587</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+    </div>
+    <div class="col-sm-1"></div>
+   </div> 
+   <!-- 16 -->
+    <div class="row p-0 m-0 " id="member">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10 mt-3">
+        <h1 id="text1" class=" main_headding py-2 text-center"  >ट्रस्ट के सदस्यगण</h1>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    <div class="row m-0 p-0">
+      <div class="col-sm-12 text-center fs-3">श्री महाराज जी</div>
+    </div>
+   <!-- 17 -->
+   <div class="row p-0 m-0 "  style="margin-top: 2%;">
+    <div class="col-sm-3 mt-1 ">
+      <img src="img/sd.jpg"style="border-radius: 15%; height: 90%; width: 100%;" class="shadow-img  rounded ">
+    </div>
+    <div class="col-sm-3 mt-1 ">
+      <img src="img/sd1.jpg"style="border-radius: 15%; height: 90%; width: 100%;" class="shadow-img  rounded">
+    </div>
+    <div class="col-sm-3 mt-1">
+      <img src="img/sd2.jpg"style="border-radius: 15%; height: 90%; width: 100%;" class="shadow-img  rounded">
+    </div>
+    <div class="col-sm-3 mt-1">
+      <img src="img/sd3.jpg"style="border-radius: 15%; height: 90%; width: 100%;" class="shadow-img  rounded">
+    </div>
+   </div>
+    <!-- 18 -->
+ 
+
+
+ <!--end vision-->
+   
+
+
+
+
+           <!--start footer-->
+    <div class="row footer-top p-0 m-0" style="min-height: 300px; background-color: rgb(51, 49, 47);">
+
+      <div class="col-lg-4 col-md-6 col-sm-12 text-light  p-5 "
+        style=" letter-spacing: 2px; line-height: 1.4;  text-align: justify;">
+        ट्रस्ट के संस्थापक अध्यक्ष साकेतवासी श्री महंत श्री प्रेम पुजारी दास जी महाराज "सिंहस्थ भूषण" ने आश्रम व्यवस्था
+        को अधिक कुशल बनाने तथा भविष्य में उत्तराधिकार को लेकर किसी भी प्रकार के विवाद से बचने एवं आश्रम के संतों एवं
+        संपत्तियों के हित को ध्यान में रखते हुए सन 1987-88 में श्री कामदगिरि प्रदिक्षणा प्रमुख द्वार (उत्तर) ट्रस्ट श्री
+        चित्रकूट धाम के नाम से एक प्राइवेट ट्रस्ट का गठन किया।
+      </div>
+
+
+      <div class="col-lg-3 col-md-6 col-sm-6 text-light p-4">
+        <div class="fs-3" style="color: rgb(255, 153, 51);">
+          महत्वपूर्ण लिंक
+          <hr style="height: 12%; color: rgb(255, 153, 51); border-width: 5px; ">
+        </div>
+        <div class="row ">
+          <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.5; letter-spacing: 1px;">
+            <ul>
+              <li> <a href="index.html" class="link">मुख्य पृष्ठ</a></li>
+              <!-- <li> <a href="#"class="link">मीडिया</a></li> -->
+              <li> <a href="video" class="link">वीडियो गैलरी</a></li>
+              <li><a href="event.html" class="link">वार्षिक आयोजनों का विवरण</a> </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6" style="line-height: 1.6 ; letter-spacing: 1px;">
+            <ul>
+              <li> <a href="about.html" class="link">बारे में</a></li>
+              <li> <a href="gallery.html" class="link">फोटो गैलरी</a></li>
+              <li> <a href="contect.html" class="link">संपर्क करें</a></li>
+              <li> <a href="feedback.html" class="link">सुझाव</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 text-light p-4">
+        <div class=" fs-3" style="color: rgb(255, 153, 51);">
+          संपर्क करें
+        <b>  <hr style="height: 12%; color: rgb(255, 155, 55); border-width: 5px;"> </b>
+        </div>
+        <span class="col-lg-4">
+          <b> पता:</b><span style="line-height: 2; letter-spacing: 2.3px;"> श्री कामदगिरि प्रदक्षिणा प्रमुख द्वार
+            (उत्तर) ट्रस्ट चित्रकूट धाम , कामतन चित्रकूट (मध्य प्रदेश)-485334 <br>
+            <b> फ़ोन:</b> <a href="tel:9752233696" class="link "> +91-9752233696 </a>,
+            <a href="tel:8168462108" class="link"> +91-8168462108 </a> <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="tel: 9451030513" class="link"> +91-9451030513 </a> ,
+            <a href="tel: 9453666803" class="link"> +91-9453666803 </a> <br>
+            <b>ईमेल :</b> <a class="link" href="mailto: Kamadgiritrust@gmail.com"> Kamadgiritrust@gmail.com</a>
+          </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+      <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">&copy;2019 Kamadgiri Trust All Rights Reserved
+        &nbsp;&nbsp;&nbsp;
+       
+      </div>
+
+    </div>
+
+    <div class="row footer-buttom p-0 m-0" style="min-height: 30px; background-color: rgb(51, 49, 47);">
+      <div class="col-lg-12 col-md-6 col-sm-12 text-light text-center">  Developed By 
+    <a href="doploper.html" style="text-decoration: none; color: white;"> Knight Coder </a>
+
+       
+      </div>
+</div>
+    </div>
+
+    <!--end footer-->
+  
+    
+    
+        </div>
+</body>
+</html>
